@@ -32,6 +32,7 @@ const Navbar = ({ activePage, setActivePage }: { activePage: Page, setActivePage
     { id: 'tech', label: 'Innovation' },
     { id: 'careers', label: 'Careers' },
     { id: 'investors', label: 'Investors' },
+    { id: 'contact', label: 'Contact' },
   ];
 
   return (
