@@ -1,5 +1,4 @@
 import { Globe, TrendingUp, Award } from "lucide-react";
-
 export default function AboutPage() {
 return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <div className="absolute inset-0 opacity-20"> <img
          src="https://picsum.photos/seed/office/1920/600"
@@ -137,8 +136,118 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
           </ul>
 
         </div>
-
+        
       </div>
+      {/* Leadership Section */}
+      <section className="py-24 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+
+          {/* Section Heading */}
+          <div className="text-center mb-16">
+            <p className="text-gold font-semibold tracking-[0.25em] text-sm uppercase mb-4">
+              Our Leadership
+            </p>
+
+            <h2 className="text-4xl font-bold text-navy">
+              Driving Infrastructure Excellence
+            </h2>
+          </div>
+
+          {/* Leadership Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-14 text-center">
+
+            {/* Card 1 */}
+            <div className="text-center">
+
+              <div className="flex justify-center mb-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+
+                  <img
+                    src="/images/saroj.png"
+                    alt="Technical Director"
+                    className="w-full h-full object-cover object-top"
+                  />
+
+                </div>
+              </div>
+
+              <h3 className="text-xl font-bold text-navy">
+                SAROJ KUMAR
+              </h3>
+
+              <p className="text-gold font-semibold mt-1">
+                Founder & CEO
+              </p>
+
+              <p className="text-navy/60 text-sm mt-4 leading-relaxed max-w-xs mx-auto">
+                Founder and visionary leader of Bharatx Infratech, responsible for
+                driving strategic growth, strengthening partnerships, and ensuring
+                the successful execution of large-scale infrastructure projects.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="text-center">
+
+              <div className="flex justify-center mb-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+
+                  <img
+                    src="/images/ganesh.png"
+                    alt="Technical Director"
+                    className="w-full h-full object-cover object-top"
+                  />
+
+                </div>
+              </div>
+
+              <h3 className="text-xl font-bold text-navy">
+                GANESH SHANKER VIDYARTHI
+              </h3>
+
+              <p className="text-gold font-semibold mt-1">
+                Co-Founder & MD
+              </p>
+
+              <p className="text-navy/60 text-sm mt-4 leading-relaxed max-w-xs mx-auto">
+                Responsible for operational leadership and project execution,
+                ensuring infrastructure developments are completed efficiently
+                with strong engineering practices and effective resource management.
+              </p>
+            </div>  
+            {/* Card 3 */}
+            <div className="text-center">
+
+              <div className="flex justify-center mb-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+
+                  <img
+                    src="/images/anuj.png"
+                    alt="Anuj Kumar"
+                    className="w-full h-full object-cover object-top"
+                  />
+
+                </div>
+              </div>
+
+              <h3 className="text-xl font-bold text-navy">
+                ANUJ KUMAR
+              </h3>
+
+              <p className="text-gold font-semibold mt-1">
+                Head of Revenue & Operation
+              </p>
+
+              <p className="text-navy/60 text-sm mt-4 leading-relaxed max-w-xs mx-auto">
+                Leads revenue strategy and operational management, strengthening
+                client relationships and driving sustainable business growth
+                across infrastructure and civil engineering projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
     </div>
   </section>
