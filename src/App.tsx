@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Menu, X, ChevronRight, Phone, Mail, MapPin, 
   Shield, Award, HardHat, TrendingUp, Globe, 
@@ -36,7 +36,7 @@ const Navbar = ({ activePage, setActivePage }: { activePage: Page, setActivePage
   ];
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-navy/95 backdrop-blur-md py-3 shadow-xl' : 'bg-transparent py-6'}`}>
+    <nav className="fixed top-0 w-full z-50 bg-black py-6 shadow-xl">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center cursor-pointer" onClick={() => setActivePage('home')}>
           <div className="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center mr-3">
@@ -80,7 +80,7 @@ const Navbar = ({ activePage, setActivePage }: { activePage: Page, setActivePage
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-navy border-t border-white/10 p-6 lg:hidden"
+            className="absolute top-full left-0 w-full bg-black border-t border-white/10 p-6 lg:hidden"
           >
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
@@ -187,7 +187,7 @@ const HomePage = ({ setActivePage }: { setActivePage: (p: Page) => void }) => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center">
+      <section className="relative min-h-screen flex items-center pt-24 md:pt-32">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://picsum.photos/seed/highway/1920/1080" 
