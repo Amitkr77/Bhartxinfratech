@@ -7,6 +7,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
          referrerPolicy="no-referrer"
        /> </div>
 
+
     <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
       <h1 className="text-5xl md:text-6xl text-white font-bold mb-6">
         Our Legacy of Excellence
@@ -133,13 +134,10 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
             <li>• Safety-First Culture</li>
             <li>• Quality & Sustainability</li>
           </ul>
-        </div>   
-      </div>  
-    </div>
-  </section>
-  {/* Leadership Section */}
-      <section className="py-24 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
+        </div>       
+      </div>
+      {/* Leadership Section */}
+        <div className="py-24 max-w-7xl mx-auto px-6">
 
           {/* Section Heading */}
           <div className="text-center mb-16">
@@ -166,6 +164,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                     alt="Technical Director"
                     className="w-full h-full object-cover object-top"
                   />
+
                 </div>
               </div>
 
@@ -244,7 +243,10 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
             </div>
           </div>
         </div>
-      </section>
+    </div>
+  </section>
 </div>
+
+
 );
 }
