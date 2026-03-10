@@ -163,7 +163,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="/images/saroj.png"
+                    src="/saroj.png"
                     alt="Technical Director"
                     className="w-full h-full object-cover object-top"
                   />
@@ -192,7 +192,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="/images/ganesh.png"
+                    src="/ganesh.png"
                     alt="Technical Director"
                     className="w-full h-full object-cover object-top"
                   />
@@ -221,7 +221,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="/images/anuj.png"
+                    src="/anuj.png"
                     alt="Anuj Kumar"
                     className="w-full h-full object-cover object-top"
                   />
