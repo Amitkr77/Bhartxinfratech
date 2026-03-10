@@ -68,7 +68,7 @@ const Navbar = ({ activePage, setActivePage }: { activePage: Page, setActivePage
         </div>
 
         {/* Mobile Toggle */}
-        <button className="lg:hidden text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <button className="lg:hidden text-white" aria-label="Toggle mobile menu" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? <X /> : <Menu />}
         </button>
       </div>
