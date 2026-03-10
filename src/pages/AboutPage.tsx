@@ -134,12 +134,9 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
             <li>• Quality & Sustainability</li>
           </ul>
         </div>   
-      </div>  
-    </div>
-  </section>
-  {/* Leadership Section */}
-      <section className="py-24 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
+      </div> 
+      {/* Leadership Section */}
+        <div className=" py-24 max-w-7xl mx-auto px-6">
 
           {/* Section Heading */}
           <div className="text-center mb-16">
@@ -243,8 +240,9 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </div> 
+    </div>
+  </section>
 </div>
 );
 }
