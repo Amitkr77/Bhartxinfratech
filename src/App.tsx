@@ -7,6 +7,7 @@ import {
   ArrowRight, CheckCircle2, Building2, Construction,
   Route, Landmark, Briefcase
 } from 'lucide-react';
+import SitemapPage from './pages/sitemap';
 
 // --- Types ---
 type Page = 'home' | 'about' | 'services' | 'projects' | 'registrations' | 'tech' | 'careers' | 'investors' | 'contact';
@@ -1007,6 +1008,7 @@ export default function App() {
       case 'registrations': return <RegistrationsPage />;
       case 'tech': return <TechPage />;
       case 'careers': return <CareersPage />;
+      case 'sitemap': return <SitemapPage />;
       case 'investors': return <InvestorsPage />;
       case 'contact': return <ContactPage />;
       default: return <HomePage setActivePage={setActivePage} />;
