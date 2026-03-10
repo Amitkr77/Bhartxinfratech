@@ -230,7 +230,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
               </h3>
 
               <p className="text-gold font-semibold mt-1">
-                Head of Revenue & Operation
+                Head of Revenue & Operations
               </p>
 
               <p className="text-navy/60 text-sm mt-4 leading-relaxed max-w-xs mx-auto">
