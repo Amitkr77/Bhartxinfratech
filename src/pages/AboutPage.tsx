@@ -167,7 +167,6 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                     alt="Technical Director"
                     className="w-full h-full object-cover object-top"
                   />
-
                 </div>
               </div>
 
@@ -247,8 +246,6 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
           </div>
         </div>
       </section>
-
-
     </div>
   </section>
 </div>
