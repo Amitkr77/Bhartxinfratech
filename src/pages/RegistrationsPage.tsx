@@ -1,144 +1,289 @@
-import { Shield, CheckCircle2 } from "lucide-react";
+import { Shield, CheckCircle2, Building2, Factory, Cpu, Wrench } from "lucide-react";
 
 export default function RegistrationsPage() {
-return ( <div className="pt-24">
+return (
+
+<div className="pt-24">
+
+{/* HERO */}
+
+<section className="py-16 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<div className="bg-navy text-white p-12 rounded-2xl shadow-xl relative overflow-hidden">
+
+<p className="text-gold text-xs uppercase tracking-[0.3em] mb-4">
+Certified Excellence
+</p>
+
+<h1 className="text-4xl md:text-5xl font-bold mb-6">
+Government Registration & <span className="text-gold">Expertise</span>
+</h1>
+
+<p className="text-white/70 max-w-xl">
+Bharatx Infratech Private Limited is a premier infrastructure entity
+committed to national development through strategic government
+partnerships and technical mastery.
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 
-  <section className="relative py-32 bg-navy">
+{/* CONTRACTOR STATUS */}
 
-    <div className="absolute inset-0 opacity-20">
-      <img
-        src="https://picsum.photos/seed/cert/1920/600"
-        alt="Registrations"
-        className="w-full h-full object-cover"
-        referrerPolicy="no-referrer"
-      />
-    </div>
+<section className="py-20 bg-white">
 
-    <div className="relative z-10 max-w-7xl mx-auto px-6">
+<div className="max-w-7xl mx-auto px-6">
 
-      <p className="text-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4">
-        Credentials & Trust
-      </p>
+<h2 className="text-2xl font-bold text-navy mb-10 border-l-4 border-gold pl-4">
+Registered Contractor Status
+</h2>
 
-      <h1 className="text-5xl md:text-6xl text-white font-bold">
-        Government Registrations
-      </h1>
+<div className="grid md:grid-cols-2 gap-8">
 
-    </div>
+{/* RCD */}
 
-  </section>
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
 
+<div className="flex items-center">
 
-  <section className="py-24 bg-white">
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Building2 className="text-gold"/>
+</div>
 
-    <div className="max-w-7xl mx-auto px-6">
+<div>
+<h3 className="text-lg font-bold text-navy">
+RCD, Bihar
+</h3>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Road Construction Department
+</p>
 
-        <div>
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Class I
+</span>
 
-          <h2 className="text-3xl font-bold text-navy mb-8">
-            Registered Contractor Status
-          </h2>
+</div>
 
+</div>
 
-          <div className="space-y-6">
-
-            {[
-              {
-                dept: "Road Construction Department (RCD), Bihar",
-                status: "Class-I Registered"
-              },
-              {
-                dept: "Public Works Department (PWD), Bihar",
-                status: "Class-I Registered"
-              },
-              {
-                dept: "Rural Works Department (RWD), Bihar",
-                status: "Registered Vendor"
-              }
-            ].map((item, i) => (
-
-              <div
-                key={i}
-                className="flex items-center p-6 bg-navy/5 border-l-4 border-gold"
-              >
-
-                <div className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center mr-6 shrink-0">
-                  <Shield className="text-navy" />
-                </div>
-
-                <div>
-
-                  <h4 className="text-navy font-bold text-lg">
-                    {item.dept}
-                  </h4>
-
-                  <p className="text-gold font-bold text-xs uppercase tracking-widest">
-                    {item.status}
-                  </p>
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
+</div>
 
 
-        <div>
+{/* PWD */}
 
-          <h2 className="text-3xl font-bold text-navy mb-8">
-            Future Partnerships
-          </h2>
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
 
-          <p className="text-navy/70 text-lg mb-8">
-            We are actively expanding our footprint to partner with
-            national and central government authorities for high-value
-            infrastructure projects.
-          </p>
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+PWD, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Public Works Department
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 
-          <div className="grid grid-cols-2 gap-4">
+{/* INFRASTRUCTURE EXPERTISE */}
 
-            {[
-              "NHAI (National Highways)",
-              "Ministry of Road Transport",
-              "Smart City Authorities",
-              "Public Sector Undertakings",
-              "Railway Infrastructure",
-              "Aviation Infrastructure"
-            ].map((item, i) => (
+<section className="py-24 bg-gray-50">
 
-              <div
-                key={i}
-                className="p-4 border border-navy/10 flex items-center text-navy font-semibold"
-              >
+<div className="max-w-7xl mx-auto px-6">
 
-                <CheckCircle2
-                  className="text-gold mr-3 shrink-0"
-                  size={18}
-                />
+<h2 className="text-2xl font-bold text-navy mb-4 flex items-center">
+<Shield className="text-gold mr-3"/> Infrastructure Expertise
+</h2>
 
-                {item}
+<p className="text-navy/60 mb-10">
+Technical excellence delivered through decades of specialized engineering experience.
+</p>
 
-              </div>
+<div className="grid md:grid-cols-4 gap-6">
 
-            ))}
+{[
+{
+icon:<Cpu/>,
+title:"Project Planning",
+desc:"Feasibility studies and infrastructure planning."
+},
+{
+icon:<Building2/>,
+title:"Civil Engineering",
+desc:"Advanced design with BIM & CAD technology."
+},
+{
+icon:<CheckCircle2/>,
+title:"Quality Control",
+desc:"Strict material testing and inspections."
+},
+{
+icon:<Wrench/>,
+title:"Maintenance",
+desc:"Lifecycle monitoring and infrastructure services."
+}
+].map((item,i)=>(
 
-          </div>
+<div key={i} className="bg-white p-6 rounded-lg border border-navy/10">
 
-        </div>
+<div className="w-10 h-10 bg-navy/10 flex items-center justify-center rounded mb-4">
+{item.icon}
+</div>
 
-      </div>
+<h4 className="font-bold text-navy mb-2">
+{item.title}
+</h4>
 
-    </div>
+<p className="text-sm text-navy/60">
+{item.desc}
+</p>
 
-  </section>
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section>
+
+
+{/* STRATEGIC PARTNERSHIPS */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-2xl font-bold text-navy mb-10 border-l-4 border-gold pl-4">
+Strategic Partnerships
+</h2>
+
+<div className="grid md:grid-cols-2 gap-10">
+
+{/* Central Govt */}
+
+<div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-10 rounded-xl">
+
+<h3 className="text-xl font-bold mb-4">
+Central Government (India)
+</h3>
+
+<p className="text-white/70 mb-6">
+Supporting the National Infrastructure Pipeline with specialized roadway
+and connectivity expertise.
+</p>
+
+<div className="flex gap-3 text-xs">
+
+<span className="px-3 py-1 border border-white/30 rounded">
+NHAI
+</span>
+
+<span className="px-3 py-1 border border-white/30 rounded">
+MoRTH
+</span>
+
+<span className="px-3 py-1 border border-white/30 rounded">
+Railway Board
+</span>
+
+</div>
+
+</div>
+
+
+{/* PSU */}
+
+<div className="bg-navy text-white p-10 rounded-xl">
+
+<h3 className="text-xl font-bold mb-4">
+PSU Collaborations
+</h3>
+
+<p className="text-white/70 mb-6">
+Industrial civil works and structural developments for premium energy
+and mining sector leaders.
+</p>
+
+<div className="flex gap-3 text-xs">
+
+<span className="px-3 py-1 border border-white/30 rounded">
+NTPC
+</span>
+
+<span className="px-3 py-1 border border-white/30 rounded">
+ONGC
+</span>
+
+<span className="px-3 py-1 border border-white/30 rounded">
+Coal India
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+{/* CTA */}
+
+<section className="py-16 bg-navy text-white">
+
+<div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+
+<div>
+
+<h2 className="text-2xl font-bold mb-2">
+Ready for Next-Gen Tenders?
+</h2>
+
+<p className="text-white/70">
+Our engineering division is equipped for mega-scale national infrastructure projects.
+</p>
+
+</div>
+
+<button className="mt-6 md:mt-0 px-8 py-4 gold-gradient text-navy font-bold">
+Request Company Profile
+</button>
+
+</div>
+
+</section>
 
 </div>
 
