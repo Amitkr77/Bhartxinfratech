@@ -229,7 +229,8 @@ role:"Lead Independent Director"
 <div key={i} className="bg-gray-50 p-6">
 
 <img
-src={`https://picsum.photos/seed/director${i}/300/300`}
+src={person.image}
+alt={person.name}
 className="mx-auto mb-4"
 />
 
