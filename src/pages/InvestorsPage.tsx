@@ -1,4 +1,5 @@
 import { BarChart3, Shield, Leaf, Users, FileText, Download } from "lucide-react";
+import { image } from "motion/react-client";
 
 export default function InvestorsPage() {
 return (
@@ -205,16 +206,19 @@ Board of Directors
 
 {[
 {
-name:"Vikram Bharatx",
-role:"Chairman & CEO"
+name:"SAROJ KUMAR",
+role:"Founder & CEO",
+image:"/saroj.png"
 },
 {
-name:"Dr. Elena Rodriguez",
-role:"Chief Financial Officer"
+name:"GANESH SHANKER VIDYARTHI",
+role:"Co-Founder & MD",
+image:"/ganesh.png"
 },
 {
-name:"Sir Julian Thorne",
-role:"Independent Director"
+name:"ANUJ KUMAR",
+role:"Head of Revenue & Operation",
+image:"/anuj.png"
 },
 {
 name:"Anand Mahipal",
