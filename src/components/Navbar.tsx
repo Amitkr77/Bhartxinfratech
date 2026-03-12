@@ -96,7 +96,7 @@ const Navbar = () => {
           ))}
 
           <button
-            onClick={() => handleNavigation("/contact")}
+            onClick={() => handleNavigation("/enquiry")}
             className="px-6 py-2 border border-gold text-gold text-sm font-semibold hover:bg-gold hover:text-navy transition-all duration-300"
           >
             ENQUIRE

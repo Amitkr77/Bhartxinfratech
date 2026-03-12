@@ -254,7 +254,7 @@ className="mx-auto mb-4"
 
 {/* SHAREHOLDER CTA */}
 
-<section className="py-24 bg-navy text-white">
+<section className="py-24 bg-gray-300 text-gray-600">
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -262,7 +262,7 @@ className="mx-auto mb-4"
 Shareholder Information
 </h2>
 
-<p className="text-white/70 mb-8 max-w-2xl">
+<p className="text-gray-600 mb-8 max-w-2xl">
 Dedicated to keeping our stakeholders informed and empowered.
 Access shareholder services and registry information.
 </p>
@@ -273,11 +273,11 @@ Access shareholder services and registry information.
 AGM Registration
 </button>
 
-<button className="px-6 py-3 border border-white/30">
+<button className="px-6 py-3 border border-navy/30">
 Transfer Agents
 </button>
 
-<button className="px-6 py-3 border border-white/30">
+<button className="px-6 py-3 border border-navy/30">
 Share Registry
 </button>
 

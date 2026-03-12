@@ -261,7 +261,7 @@ Coal India
 
 {/* CTA */}
 
-<section className="py-16 bg-navy text-white">
+<section className="py-16 bg-gray-200 text-grey-600">
 
 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
 
@@ -271,7 +271,7 @@ Coal India
 Ready for Next-Gen Tenders?
 </h2>
 
-<p className="text-white/70">
+<p className="text-grey-700/80">
 Our engineering division is equipped for mega-scale national infrastructure projects.
 </p>
 
