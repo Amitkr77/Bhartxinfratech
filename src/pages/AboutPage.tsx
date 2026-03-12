@@ -1,6 +1,6 @@
 import { Globe, TrendingUp, Award } from "lucide-react";
 export default function AboutPage() {
-return ( <div className="pt-24 min-h-screen"> <section className="relative py-32 bg-navy"> <div className="absolute inset-0 opacity-20"> <img
+return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <div className="absolute inset-0 opacity-20"> <img
          src="https://picsum.photos/seed/office/1920/600"
          alt="About"
          className="w-full h-full object-cover"
@@ -136,10 +136,8 @@ return ( <div className="pt-24 min-h-screen"> <section className="relative py-32
           </ul>
         </div>       
       </div>
-      
       {/* Leadership Section */}
-        <section className="py-24 bg-navy">
-          <div className="max-w-7xl mx-auto px-6">
+        <div className="py-24 max-w-7xl mx-auto px-6">
 
           {/* Section Heading */}
           <div className="text-center mb-16">
@@ -156,10 +154,10 @@ return ( <div className="pt-24 min-h-screen"> <section className="relative py-32
           <div className="grid grid-cols-1 md:grid-cols-3 gap-14 text-center">
 
             {/* Card 1 */}
-            <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="text-center">
 
               <div className="flex justify-center mb-6">
-                <div className="w-48 h-48 rounded-full border-4 border-white shadow-xl">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
                     src="/saroj.png"
@@ -186,10 +184,10 @@ return ( <div className="pt-24 min-h-screen"> <section className="relative py-32
             </div>
 
             {/* Card 2 */}
-            <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="text-center">
 
               <div className="flex justify-center mb-6">
-                <div className="w-48 h-48 rounded-full border-4 border-white shadow-xl">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
                     src="/ganesh.png"
@@ -215,10 +213,10 @@ return ( <div className="pt-24 min-h-screen"> <section className="relative py-32
               </p>
             </div>  
             {/* Card 3 */}
-            <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="text-center">
 
               <div className="flex justify-center mb-6">
-                <div className="w-48 h-48 rounded-full border-4 border-white shadow-xl">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
                     src="/anuj.png"
@@ -245,7 +243,6 @@ return ( <div className="pt-24 min-h-screen"> <section className="relative py-32
             </div>
           </div>
         </div>
-      </section>
     </div>
   </section>
 </div>
