@@ -11,6 +11,7 @@ type Page =
   | "registrations"
   | "tech"
   | "careers"
+  | "vendor"
   | "investors"
   | "contact";
 
@@ -43,6 +44,7 @@ const Navbar = () => {
     { id: "registrations", label: "Expertise", path: "/registrations" },
     { id: "tech", label: "Innovation", path: "/tech" },
     { id: "careers", label: "Careers", path: "/careers" },
+    { id: "vendor", label: "Vendor Portal", path: "/vendor-portal" },
     { id: "investors", label: "Investors", path: "/investors" },
     { id: "contact", label: "Contact", path: "/contact" }
   ];

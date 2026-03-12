@@ -21,7 +21,7 @@ import TechPage from "./pages/TechPage";
 import CareersPage from "./pages/CareersPage";
 import InvestorsPage from "./pages/InvestorsPage";
 import ContactPage from "./pages/ContactPage";
-
+import VendorPortalPage from "./pages/VendorPage";
 
 function AnimatedRoutes() {
 
@@ -54,6 +54,7 @@ function AnimatedRoutes() {
             <Route path="/registrations" element={<RegistrationsPage />} />
             <Route path="/tech" element={<TechPage />} />
             <Route path="/careers" element={<CareersPage />} />
+            <Route path="/vendor-portal" element={<VendorPortalPage />} />
             <Route path="/investors" element={<InvestorsPage />} />
             <Route path="/contact" element={<ContactPage />} />
 
