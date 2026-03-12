@@ -154,7 +154,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
           <div className="grid grid-cols-1 md:grid-cols-3 gap-14 text-center">
 
             {/* Card 1 */}
-            <div className="text-center">
+            <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
               <div className="flex justify-center mb-6">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
@@ -184,7 +184,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
             </div>
 
             {/* Card 2 */}
-            <div className="text-center">
+            <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
               <div className="flex justify-center mb-6">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
@@ -213,7 +213,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
               </p>
             </div>  
             {/* Card 3 */}
-            <div className="text-center">
+            <div className="text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
               <div className="flex justify-center mb-6">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
