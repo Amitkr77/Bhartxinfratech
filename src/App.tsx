@@ -1,5 +1,11 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation
+} from "react-router-dom";
 
 /* Components */
 import Navbar from "./components/Navbar";
@@ -16,103 +22,70 @@ import CareersPage from "./pages/CareersPage";
 import InvestorsPage from "./pages/InvestorsPage";
 import ContactPage from "./pages/ContactPage";
 
-/* Page Type */
-type Page =
-| "home"
-| "about"
-| "services"
-| "projects"
-| "registrations"
-| "tech"
-| "careers"
-| "investors"
-| "contact";
+
+function AnimatedRoutes() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return (
+
+    <main className="flex-grow">
+
+      <AnimatePresence mode="wait">
+
+        <motion.div
+          key={location.pathname}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+
+          <Routes location={location}>
+
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/registrations" element={<RegistrationsPage />} />
+            <Route path="/tech" element={<TechPage />} />
+            <Route path="/careers" element={<CareersPage />} />
+            <Route path="/investors" element={<InvestorsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+
+          </Routes>
+
+        </motion.div>
+
+      </AnimatePresence>
+
+    </main>
+
+  );
+}
 
 export default function App() {
 
-const [activePage, setActivePage] = useState<Page>("home");
+  return (
 
-/* Scroll to top when page changes */
-useEffect(() => {
-window.scrollTo(0, 0);
-}, [activePage]);
+    <Router>
 
-/* Page Switcher */
-const renderPage = () => {
+      <div className="min-h-screen flex flex-col">
 
+        <Navbar />
 
-switch (activePage) {
+        <AnimatedRoutes />
 
-  case "home":
-    return <HomePage setActivePage={setActivePage} />;
+        <Footer />
 
-  case "about":
-    return <AboutPage />;
+      </div>
 
-  case "services":
-    return <ServicesPage />;
+    </Router>
 
-  case "projects":
-    return <ProjectsPage />;
-
-  case "registrations":
-    return <RegistrationsPage />;
-
-  case "tech":
-    return <TechPage />;
-
-  case "careers":
-    return <CareersPage />;
-
-  case "investors":
-    return <InvestorsPage />;
-
-  case "contact":
-    return <ContactPage />;
-
-  default:
-    return <HomePage setActivePage={setActivePage} />;
-
-}
-
-
-};
-
-return (
-
-
-<div className="min-h-screen flex flex-col">
-
-  {/* Navbar */}
-  <Navbar activePage={activePage} setActivePage={setActivePage} />
-
-  {/* Page Content */}
-  <main className="flex-grow">
-
-    <AnimatePresence mode="wait">
-
-      <motion.div
-        key={activePage}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-
-        {renderPage()}
-
-      </motion.div>
-
-    </AnimatePresence>
-
-  </main>
-
-  {/* Footer */}
-  <Footer setActivePage={setActivePage} />
-
-</div>
-
-
-);
+  );
 
 }
