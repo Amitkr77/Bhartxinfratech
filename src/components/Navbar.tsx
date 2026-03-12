@@ -30,11 +30,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /* Detect active page from URL */
-  const activePage =
-    location.pathname === "/"
-      ? "home"
-      : location.pathname.replace("/", "");
+  
 
   const navItems: { id: Page; label: string; path: string }[] = [
     { id: "home", label: "Home", path: "/" },
@@ -48,6 +44,10 @@ const Navbar = () => {
     { id: "investors", label: "Investors", path: "/investors" },
     { id: "contact", label: "Contact", path: "/contact" }
   ];
+
+  /* Detect active page from URL */
+  const activePage =
+    navItems.find((item) => item.path === location.pathname)?.id || "home";
 
   const handleNavigation = (path: string) => {
     navigate(path);
@@ -97,7 +97,12 @@ const Navbar = () => {
 
           <button
             onClick={() => handleNavigation("/enquiry")}
-            className="px-6 py-2 border border-gold text-gold text-sm font-semibold hover:bg-gold hover:text-navy transition-all duration-300"
+            className={`px-6 py-2 border text-sm font-semibold transition-all duration-300
+            ${
+              location.pathname === "/enquiry"
+                ? "bg-gold text-navy border-gold"
+                : "border-white text-white hover:bg-gold hover:text-navy"
+            }`}
           >
             ENQUIRE
           </button>
