@@ -1,25 +1,11 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function ContactPage() {
-return ( <div className="pt-24">
 
 
-  <section className="relative py-32 bg-navy">
 
-    <div className="absolute inset-0 opacity-20">
-      <img
-        src="https://picsum.photos/seed/contact/1920/600"
-        alt="Contact"
-        className="w-full h-full object-cover"
-        referrerPolicy="no-referrer"
-      />
-    </div>
 
-    <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
 
-      <h1 className="text-5xl md:text-6xl text-white font-bold mb-6">
-        Connect with the Architects of Progress
-      </h1>
 
       <p className="text-gold font-semibold tracking-[0.3em] uppercase text-sm">
         Regional Headquarters • Gaya, Bihar
