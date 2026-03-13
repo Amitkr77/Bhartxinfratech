@@ -249,7 +249,7 @@ Contact Numbers
 </h4>
 
 <p className="text-navy/60">
-+91 (981) 12-63046 (Office)
++91  (981) 12-63046(Office)
 </p>
 
 </div>
@@ -297,13 +297,13 @@ loading="lazy"
 
 </div>
 
-</div>
-
 <img
   src="/certifications.jpg"
   alt="Company Certifications"
-  className="h-100 w-250 max-w-5xl mx-auto"
+  className="h-60 w-90 max-w-5xl mx-auto"
 />
+
+</div>
 
 </section>
 
