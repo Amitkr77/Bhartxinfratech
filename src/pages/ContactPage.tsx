@@ -73,9 +73,6 @@ Regional Headquarters • Gaya, Bihar
 
 </section>
 
-
-
-
 <section className="py-24 bg-white">
 
 <div className="max-w-7xl mx-auto px-6">
@@ -303,6 +300,12 @@ loading="lazy"
 </div>
 
 </div>
+
+<img
+  src="/certifications.jpg"
+  alt="Company Certifications"
+  className="h-100 w-250 max-w-5xl mx-auto"
+/>
 
 </section>
 
