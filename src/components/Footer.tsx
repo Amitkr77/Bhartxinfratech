@@ -156,7 +156,7 @@ Gaya, Bihar – 824237, India
 
 <div className="flex items-center">
 <Phone className="mr-3 text-gold shrink-0" size={18} />
-<p>+91 (631) 222-XXXX</p>
+<p>+91 (981) 12-63046</p>
 </div>
 
 <div className="flex items-center">

@@ -249,7 +249,7 @@ Contact Numbers
 </h4>
 
 <p className="text-navy/60">
-+91 (631) 222-63046 (Office)
++91 (981) 12-63046 (Office)
 </p>
 
 </div>
