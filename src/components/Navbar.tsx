@@ -47,7 +47,7 @@ const Navbar = () => {
 
   /* Detect active page from URL */
   const activePage =
-    navItems.find((item) => item.path === location.pathname)?.id || "home";
+    navItems.find((item) => item.path === location.pathname)?.id || null;
 
   const handleNavigation = (path: string) => {
     navigate(path);
