@@ -291,9 +291,9 @@ Project Completion
 </div>
 </div>
 
-<div className="lg:w-1/2">
+<div className="lg:w-1/2"> 
 
-<p className="text-gold font-semibold tracking-[0.3em] text-xs uppercase mb-4">
+<p className="text-gold font-bold tracking-[0.3em] text-xs uppercase mb-4">
 Our Vision
 </p>
 
