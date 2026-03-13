@@ -54,7 +54,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-1/2 -translate-x-1/2 w-full z-50 bg-black/70 backdrop-blur-md py-4 shadow-xl rounded-xl border border-white/10">
+    <nav className="fixed left-1/2 -translate-x-1/2 w-full z-50 bg-black/70 backdrop-blur-md py-4 shadow-xl border border-white/10">
 
       <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
 
