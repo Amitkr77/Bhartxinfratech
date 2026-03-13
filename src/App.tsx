@@ -6,6 +6,7 @@ import {
   Route,
   useLocation
 } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
 /* Components */
 import Navbar from "./components/Navbar";
@@ -46,7 +47,7 @@ function AnimatedRoutes() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-
+        <Suspense fallback={<div>Loading...</div>}>
           <Routes location={location}>
 
             <Route path="/" element={<HomePage />} />
@@ -63,7 +64,7 @@ function AnimatedRoutes() {
             <Route path="/sitemap" element={<SitemapPage />} />
 
           </Routes>
-
+        </Suspense>
         </motion.div>
 
       </AnimatePresence>
