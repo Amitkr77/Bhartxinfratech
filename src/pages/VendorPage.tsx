@@ -256,16 +256,8 @@ export default function VendorPortalPage() {
             We are looking for innovation-driven partners.
           </p>
 
-          <div className="flex justify-center gap-4">
 
-            <input
-              placeholder="Enter Company Email"
-              className="border px-4 py-3 w-72"
-            />
 
-            <button className="gold-gradient px-6 py-3 font-semibold">
-              Start Registration
-            </button>
 
           </div>
 
@@ -277,4 +269,3 @@ export default function VendorPortalPage() {
 
   );
 
-}
