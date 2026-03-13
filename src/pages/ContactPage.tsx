@@ -19,68 +19,29 @@ export default function ContactPage() {
 
 
 
-                </label>
 
 
 
 
-                <input
-                  type="email"
-                  className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-none transition-colors"
-                />
-              </div>
-
-            </div>
 
 
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-navy/60 mb-2">
-                Phone Number
-              </label>
 
-              <input
-                type="tel"
-                className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-none transition-colors"
-              />
-            </div>
+{errors.email && (
+<p className="text-red-500 text-sm mt-1">{errors.email}</p>
+)}
 
 
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-navy/60 mb-2">
-                Project Requirement
-              </label>
-
-              <select className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-none transition-colors">
-
-                <option>Road Construction</option>
-                <option>Bridge & Flyover</option>
-                <option>Civil Infrastructure</option>
-                <option>Government Tender</option>
-                <option>Other</option>
-
-              </select>
-            </div>
 
 
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-navy/60 mb-2">
-                Message
-              </label>
-
-              <textarea
-                rows={5}
-                className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-none transition-colors"
-              ></textarea>
-            </div>
 
 
-            <button className="w-full py-4 gold-gradient text-navy font-bold tracking-widest hover:scale-[1.02] transition-transform">
-              SUBMIT INQUIRY
-            </button>
 
-          </form>
 
-        </div>
+
+
+
+
+
 
 
 
