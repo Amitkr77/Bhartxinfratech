@@ -54,24 +54,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black py-6 shadow-xl">
+    <nav className="fixed left-1/2 -translate-x-1/2 w-full z-50 bg-black/70 backdrop-blur-md py-4 shadow-xl rounded-xl border border-white/10">
 
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
 
         {/* Logo */}
         <div
           className="flex items-center cursor-pointer"
           onClick={() => handleNavigation("/")}
         >
-          <div className="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center mr-3">
+          <div className="w-18 h-18 white-gradient rounded-sm flex items-center justify-center mr-3">
             <img
               src="/logo.png"
               alt="Bharatx Logo"
-              className="w-9 h-9 rounded-sm object-contain"
+              className="w-18 h-18 rounded-sm object-contain"
             />
           </div>
 
-          <div>
+          {/* <div>
             <h1 className="text-white font-display font-bold text-lg leading-none tracking-wider">
               BHARATX
             </h1>
@@ -79,7 +79,7 @@ const Navbar = () => {
             <p className="text-gold text-[10px] font-semibold tracking-[0.2em] mt-1">
               INFRATECH PVT LTD
             </p>
-          </div>
+          </div>*/}
         </div>
 
         {/* Desktop Navigation */}
