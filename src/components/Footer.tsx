@@ -181,7 +181,9 @@ Gaya, Bihar – 824237, India
 <p>
 © 2026 BHARATX INFRATECH PRIVATE LIMITED. ALL RIGHTS RESERVED.
 </p>
-<li><Link to="/sitemap">Sitemap</Link></li>
+<ul className="flex flex-wrap justify-center md:justify-start gap-4">
+  <li><Link to="/sitemap">Sitemap</Link></li>
+</ul>
 <p className="mt-4 md:mt-0">
 CIN: U41001BR2026PTC082273 | PAN: AAOCB4119N
 </p>
