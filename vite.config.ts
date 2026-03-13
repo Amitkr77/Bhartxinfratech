@@ -21,8 +21,7 @@ export default defineConfig(({mode}) => {
       hmr: process.env.DISABLE_HMR !== 'true',
     },
     build: {
-      cssCodeSplit: true,
-      chunkSizeWarningLimit: 600
-    }
+  cssCodeSplit: true
+}
   };
 });
