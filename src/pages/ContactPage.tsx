@@ -7,49 +7,22 @@ export default function ContactPage() {
 
 
 
-      <p className="text-gold font-semibold tracking-[0.3em] uppercase text-sm">
-        Regional Headquarters • Gaya, Bihar
-      </p>
-
-    </div>
-
-  </section>
 
 
-  <section className="py-24 bg-white">
-
-    <div className="max-w-7xl mx-auto px-6">
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
 
-        {/* Contact Form */}
-        <div>
 
-          <h2 className="text-3xl font-bold text-navy mb-8">
-            Project Inquiries
-          </h2>
 
-          <form className="space-y-6">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-navy/60 mb-2">
-                  Full Name
+
+
+
+
                 </label>
 
-                <input
-                  type="text"
-                  className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-none transition-colors"
-                />
-              </div>
 
 
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-navy/60 mb-2">
-                  Email Address
-                </label>
 
                 <input
                   type="email"
