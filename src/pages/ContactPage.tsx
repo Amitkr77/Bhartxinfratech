@@ -73,36 +73,7 @@ Regional Headquarters • Gaya, Bihar
 
 </section>
 
-{/* CERTIFICATIONS */}
 
-<section className="py-20 bg-white">
-
-<div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-
-{[
-{title:"ISO",desc:"Quality Assurance"},
-{title:"Safety",desc:"Zero Incident Policy"},
-{title:"Green",desc:"Environmental Standards"},
-{title:"Quality",desc:"Infrastructure Excellence"}
-].map((item,i)=>(
-
-<div key={i} className="bg-gray-200 h-28 flex flex-col justify-center items-center rounded-sm">
-
-<h3 className="font-bold text-gray-600">
-{item.title}
-</h3>
-
-<p className="text-xs text-gray-500">
-{item.desc}
-</p>
-
-</div>
-
-))}
-
-</div>
-
-</section>
 
 
 <section className="py-24 bg-white">
