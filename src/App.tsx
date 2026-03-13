@@ -23,6 +23,7 @@ import InvestorsPage from "./pages/InvestorsPage";
 import ContactPage from "./pages/ContactPage";
 import VendorPortalPage from "./pages/VendorPage";
 import EnquiryPage from "./pages/EnquiryPage";
+import SitemapPage from "./pages/sitemap";
 
 function AnimatedRoutes() {
 
@@ -59,6 +60,7 @@ function AnimatedRoutes() {
             <Route path="/investors" element={<InvestorsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/enquiry" element={<EnquiryPage />} />
+            <Route path="/sitemap" element={<SitemapPage />} />
 
           </Routes>
 

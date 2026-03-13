@@ -1,6 +1,70 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useState } from "react";
 
 export default function EnquiryPage() {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    enquiry: "",
+    message: ""
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const validate = () => {
+    let newErrors:any = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Enter valid email";
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    } else if (!/^[0-9]{10}$/.test(formData.phone)) {
+      newErrors.phone = "Enter valid 10 digit phone number";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validate()) {
+      alert("Enquiry submitted successfully!");
+
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        phone: "",
+        enquiry: "",
+        message: ""
+      });
+    }
+  };
+
   return (
     <div className="pt-24">
 
@@ -80,9 +144,9 @@ export default function EnquiryPage() {
                 </span>
               </div>
 
-              </div>
+            </div>
 
-              <div className="mt-10">
+            <div className="mt-10">
               <img
                 src="https://picsum.photos/seed/construction-site/600/400"
                 alt="Infrastructure Project"
@@ -101,7 +165,7 @@ export default function EnquiryPage() {
               Send an Enquiry
             </h2>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
 
               {/* NAME */}
 
@@ -109,12 +173,21 @@ export default function EnquiryPage() {
                 <label className="text-sm font-semibold text-navy block mb-2">
                   Full Name
                 </label>
+
                 <input
                   type="text"
+                  name="name"
                   placeholder="Enter your name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold"
                 />
+
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                )}
               </div>
+
 
               {/* COMPANY */}
 
@@ -122,12 +195,17 @@ export default function EnquiryPage() {
                 <label className="text-sm font-semibold text-navy block mb-2">
                   Company / Organization
                 </label>
+
                 <input
                   type="text"
+                  name="company"
                   placeholder="Company name"
+                  value={formData.company}
+                  onChange={handleChange}
                   className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold"
                 />
               </div>
+
 
               {/* EMAIL */}
 
@@ -135,12 +213,21 @@ export default function EnquiryPage() {
                 <label className="text-sm font-semibold text-navy block mb-2">
                   Email Address
                 </label>
+
                 <input
                   type="email"
+                  name="email"
                   placeholder="Enter email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold"
                 />
+
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                )}
               </div>
+
 
               {/* PHONE */}
 
@@ -148,12 +235,21 @@ export default function EnquiryPage() {
                 <label className="text-sm font-semibold text-navy block mb-2">
                   Phone Number
                 </label>
+
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="+91"
+                  value={formData.phone}
+                  onChange={handleChange}
                   className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold"
                 />
+
+                {errors.phone && (
+                  <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                )}
               </div>
+
 
               {/* ENQUIRY TYPE */}
 
@@ -162,17 +258,22 @@ export default function EnquiryPage() {
                   Enquiry Type
                 </label>
 
-                <select className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold">
-
+                <select
+                  name="enquiry"
+                  value={formData.enquiry}
+                  onChange={handleChange}
+                  className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold"
+                >
                   <option>Project Partnership</option>
                   <option>Government Tender</option>
                   <option>Vendor Registration</option>
                   <option>Infrastructure Consultancy</option>
                   <option>Career / HR</option>
                   <option>General Enquiry</option>
-
                 </select>
+
               </div>
+
 
               {/* MESSAGE */}
 
@@ -183,10 +284,18 @@ export default function EnquiryPage() {
 
                 <textarea
                   rows={4}
+                  name="message"
                   placeholder="Describe your enquiry"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold"
                 />
+
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                )}
               </div>
+
 
               {/* SUBMIT */}
 

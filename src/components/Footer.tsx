@@ -1,6 +1,6 @@
 import React from "react";
 import { Globe, Users, MapPin, Phone, Mail } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,  Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -177,7 +177,7 @@ Gaya, Bihar – 824237, India
 <p>
 © 2026 BHARATX INFRATECH PRIVATE LIMITED. ALL RIGHTS RESERVED.
 </p>
-
+<li><Link to="/sitemap">Sitemap</Link></li>
 <p className="mt-4 md:mt-0">
 CIN: U41001BR2026PTC082273 | PAN: AAOCB4119N
 </p>
