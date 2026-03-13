@@ -21,6 +21,8 @@ return (
  <img
     src="/logo.png"
     alt="Bharatx Logo"
+    width="36"
+    height="36"
     className="w-9 h-9 rounded-sm object-contain"
  />
 </div>
@@ -59,7 +61,7 @@ across India.
 Quick Links
 </h3>
 
-<ul className="space-y-4 text-sm text-white/60">
+<ul className="space-y-4 text-sm text-white/80">
 
 <li>
 <button
@@ -127,7 +129,7 @@ Investors
 Our Expertise
 </h3>
 
-<ul className="space-y-4 text-sm text-white/60">
+<ul className="space-y-4 text-sm text-white/80">
 
 <li>Road Construction & Highways</li>
 <li>Bridge & Flyover Engineering</li>
@@ -147,7 +149,7 @@ Our Expertise
 Headquarters
 </h3>
 
-<div className="space-y-4 text-sm text-white/60">
+<div className="space-y-4 text-sm text-white/80">
 
 <div className="flex items-start">
 <MapPin className="mr-3 text-gold shrink-0" size={18} />
@@ -176,14 +178,14 @@ Gaya, Bihar – 824237, India
 
 {/* Bottom Bar */}
 
-<div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-white/40 tracking-widest uppercase font-semibold">
+<div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-white/70 tracking-widest uppercase font-semibold">
 
 <p>
 © 2026 BHARATX INFRATECH PRIVATE LIMITED. ALL RIGHTS RESERVED.
 </p>
-<ul className="flex flex-wrap justify-center md:justify-start gap-4">
-  <li><Link to="/sitemap">Sitemap</Link></li>
-</ul>
+<Link to="/sitemap" className="hover:text-gold transition-colors">
+  Sitemap
+</Link>
 <p className="mt-4 md:mt-0">
 CIN: U41001BR2026PTC082273 | PAN: AAOCB4119N
 </p>
