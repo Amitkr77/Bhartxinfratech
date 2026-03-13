@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   BrowserRouter as Router,
@@ -6,25 +6,24 @@ import {
   Route,
   useLocation
 } from "react-router-dom";
-import { lazy, Suspense } from "react";
 
 /* Components */
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-/* Pages */
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ServicesPage from "./pages/ServicesPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import RegistrationsPage from "./pages/RegistrationsPage";
-import TechPage from "./pages/TechPage";
-import CareersPage from "./pages/CareersPage";
-import InvestorsPage from "./pages/InvestorsPage";
-import ContactPage from "./pages/ContactPage";
-import VendorPortalPage from "./pages/VendorPage";
-import EnquiryPage from "./pages/EnquiryPage";
-import SitemapPage from "./pages/sitemap";
+/* Pages (Lazy Loaded) */
+const HomePage = lazy(() => import("./pages/HomePage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const ServicesPage = lazy(() => import("./pages/ServicesPage"));
+const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
+const RegistrationsPage = lazy(() => import("./pages/RegistrationsPage"));
+const TechPage = lazy(() => import("./pages/TechPage"));
+const CareersPage = lazy(() => import("./pages/CareersPage"));
+const InvestorsPage = lazy(() => import("./pages/InvestorsPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const VendorPortalPage = lazy(() => import("./pages/VendorPage"));
+const EnquiryPage = lazy(() => import("./pages/EnquiryPage"));
+const SitemapPage = lazy(() => import("./pages/sitemap"));
 
 function AnimatedRoutes() {
 
@@ -47,7 +46,9 @@ function AnimatedRoutes() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
+
         <Suspense fallback={<div>Loading...</div>}>
+
           <Routes location={location}>
 
             <Route path="/" element={<HomePage />} />
@@ -64,7 +65,9 @@ function AnimatedRoutes() {
             <Route path="/sitemap" element={<SitemapPage />} />
 
           </Routes>
+
         </Suspense>
+
         </motion.div>
 
       </AnimatePresence>
