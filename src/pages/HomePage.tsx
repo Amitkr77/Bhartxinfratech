@@ -158,7 +158,7 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 {item.title}
 </h3>
 
-<p className="text-navy/80 text-sm leading-relaxed">
+<p className="text-navy/60 text-sm leading-relaxed">
 {item.desc}
 </p>
 
@@ -242,7 +242,7 @@ className="w-full h-full object-cover transition-transform duration-700 group-ho
 referrerPolicy="no-referrer"
 />
 
-<div className="absolute inset-0 bg-navy/80 group-hover:bg-navy/20 transition-colors" />
+<div className="absolute inset-0 bg-navy/40 group-hover:bg-navy/20 transition-colors" />
 
 </div>
 
@@ -250,7 +250,7 @@ referrerPolicy="no-referrer"
 {item.title}
 </h3>
 
-<p className="text-white/80 text-sm">{item.desc}</p>
+<p className="text-white/60 text-sm">{item.desc}</p>
 
 </div>
 
@@ -301,7 +301,7 @@ Our Vision
 To become India's most trusted infrastructure partner.
 </h2>
 
-<p className="text-navy/80 text-lg leading-relaxed mb-8">
+<p className="text-navy/70 text-lg leading-relaxed mb-8">
 We are committed to building a stronger India through engineering
 excellence, sustainable practices, and timely project delivery.
 </p>
