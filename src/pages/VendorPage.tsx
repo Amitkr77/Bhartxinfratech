@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import {
   ArrowRight,
   FileText,
@@ -7,6 +8,9 @@ import {
 } from "lucide-react";
 
 export default function VendorPortalPage() {
+
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
 
   const tenders = [
     {
@@ -28,6 +32,26 @@ export default function VendorPortalPage() {
       deadline: "Oct 30, 2024"
     }
   ];
+
+  const handleRegistration = () => {
+
+    if (!email) {
+      setError("Company email is required");
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      setError("Enter a valid company email");
+      return;
+    }
+
+    setError("");
+
+    alert("Vendor registration started for: " + email);
+
+  };
 
   return (
 
@@ -256,8 +280,30 @@ export default function VendorPortalPage() {
             We are looking for innovation-driven partners.
           </p>
 
+          <div className="flex flex-col items-center gap-3">
 
+            <div className="flex justify-center gap-4">
 
+              <input
+                type="email"
+                placeholder="Enter Company Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="border px-4 py-3 w-72"
+              />
+
+              <button
+                onClick={handleRegistration}
+                className="gold-gradient px-6 py-3 font-semibold"
+              >
+                Start Registration
+              </button>
+
+            </div>
+
+            {error && (
+              <p className="text-red-500 text-sm">{error}</p>
+            )}
 
           </div>
 
@@ -269,3 +315,4 @@ export default function VendorPortalPage() {
 
   );
 
+}
