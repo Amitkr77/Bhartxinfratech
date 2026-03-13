@@ -17,8 +17,12 @@ return (
 
 <div className="flex items-center mb-6">
 
-<div className="w-8 h-8 gold-gradient rounded-sm flex items-center justify-center mr-3">
-<span className="text-navy font-bold text-lg">B</span>
+<div className="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center mr-3">
+ <img
+    src="/logo.png"
+    alt="Bharatx Logo"
+    className="w-9 h-9 rounded-sm object-contain"
+ />
 </div>
 
 <h2 className="font-display font-bold text-xl tracking-wider">
