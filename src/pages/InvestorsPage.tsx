@@ -202,7 +202,7 @@ Annual Reports
 Board of Directors
 </h2>
 
-<div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
 
 {[
 {
@@ -219,14 +219,10 @@ image:"/ganesh.png"
 name:"ANUJ KUMAR",
 role:"Head of Revenue & Operation",
 image:"/anuj.png"
-},
-{
-name:"Anand Mahipal",
-role:"Lead Independent Director"
 }
 ].map((person,i)=>(
 
-<div key={i} className="bg-gray-50 p-6">
+<div key={i} className="bg-gray-50 w-full p-6">
 
 <img
 src={person.image}

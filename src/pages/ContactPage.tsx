@@ -249,9 +249,7 @@ Contact Numbers
 </h4>
 
 <p className="text-navy/60">
-+91 (631) 222-XXXX (Office)
-<br/>
-+91 99XXXXXX (Project Dept)
++91 (631) 222-63046 (Office)
 </p>
 
 </div>
