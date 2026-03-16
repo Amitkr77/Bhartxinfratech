@@ -27,7 +27,7 @@ autoPlay
 loop
 muted
 playsInline
-className="w-full h-full object-cover"
+className="w-full h-full object-cover scale-110 animate-[slowZoom_20s_linear_infinite]"
 >
 <source src="/hero1.mp4" type="video/mp4" />
 </video>
@@ -159,9 +159,9 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 
 <div className="mb-6">{item.icon}</div>
 
-<h3 className="text-navy font-bold text-lg mb-3">
+<h2 className="text-navy font-bold text-lg mb-3">
 {item.title}
-</h3>
+</h2>
 
 <p className="text-navy/60 text-sm leading-relaxed">
 {item.desc}
@@ -285,9 +285,9 @@ referrerPolicy="no-referrer"
 
 <div className="absolute -bottom-8 -right-8 w-48 h-48 gold-gradient p-8 flex flex-col justify-center">
 
-<p className="text-navy font-bold text-4xl">100%</p>
+<p className="text-navy font-bold text-4xl">100 %</p>
 
-<p className="text-navy/80 text-[10px] font-bold tracking-widest uppercase">
+<p className="text-navy/90 text-[12px] font-bold tracking-widest uppercase">
 Project Completion
 </p>
 
