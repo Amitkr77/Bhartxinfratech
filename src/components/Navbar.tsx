@@ -55,10 +55,10 @@ const Navbar = () => {
 
   return (
     <nav
-  className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-4 transition-all duration-300
+  className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-2 transition-all duration-300
   ${
     isScrolled
-      ? "bg-black/70 shadow-xl border border-gray-200 backdrop-blur-md"
+      ? "bg-black/70 shadow-xl backdrop-blur-md"
       : "bg-transparent border-transparent"
   }`}
 >

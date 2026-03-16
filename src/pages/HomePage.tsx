@@ -21,14 +21,19 @@ return (
 <section className="relative min-h-screen flex items-center pt-24 md:pt-32">
 
 <div className="absolute inset-0 z-0">
-<img
-src="https://picsum.photos/seed/highway/1920/1080"
-alt="Infrastructure"
+
+<video
+autoPlay
+loop
+muted
+playsInline
 className="w-full h-full object-cover"
-referrerPolicy="no-referrer"
-/>
+>
+<source src="/hero1.mp4" type="video/mp4" />
+</video>
 
 <div className="absolute inset-0 bg-navy/70" />
+
 </div>
 
 <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
