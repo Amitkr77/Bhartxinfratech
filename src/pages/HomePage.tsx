@@ -27,7 +27,7 @@ autoPlay
 loop
 muted
 playsInline
-preload="metadata"
+preload="none"
 className="w-full h-full object-cover scale-110 animate-[slowZoom_30s_linear_infinite]"
 >
 <source src="/hero1.mp4" type="video/mp4" />
@@ -43,7 +43,7 @@ className="w-full h-full object-cover scale-110 animate-[slowZoom_30s_linear_inf
 initial={{ opacity: 0, y: 30 }}
 whileInView={{ opacity: 1, y: 0 }}
 viewport={{ once: true }}
-transition={{ duration: 0.8 }}
+transition={{ duration: 0.6 }}
 className="max-w-3xl"
 >
 
@@ -183,6 +183,7 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 
 <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
 <img
+loading="lazy"
 src="https://picsum.photos/seed/blueprint/800/800"
 alt="bg"
 className="w-full h-full object-cover"
