@@ -58,7 +58,7 @@ const Navbar = () => {
   className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-2 transition-all duration-300
   ${
     isScrolled
-      ? "bg-black/70 shadow-xl backdrop-blur-md"
+      ? "bg-black/80 shadow-xl backdrop-blur-md"
       : "bg-transparent border-transparent"
   }`}
 >
@@ -97,7 +97,7 @@ const Navbar = () => {
               key={item.id}
               onClick={() => handleNavigation(item.path)}
               className={`text-sm font-medium tracking-wide transition-colors hover:text-gold ${
-                activePage === item.id ? "text-gold" : "text-gray-400"
+                activePage === item.id? "text-gold" : isScrolled ? "text-white": "text-blue text-bold"
               }`}
             >
               {item.label}
@@ -110,8 +110,10 @@ const Navbar = () => {
             className={`px-6 py-2 border text-sm font-semibold transition-all duration-300
             ${
               location.pathname === "/enquiry"
-                ? "bg-gold text-navy border-gold"
-                : "border-gray-400 text-gray-400 hover:bg-gold hover:text-navy"
+                ? "bg-gold text-blue text-bold border-gold"
+                : isScrolled
+                ? "border-white text-white hover:bg-gold hover:text-navy"
+                : "border-navy text-navy hover:bg-gold hover:text-navy"
             }`}
           >
             ENQUIRE
@@ -121,7 +123,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-white"
+          className={`lg:hidden ${isScrolled ? "text-white" : "text-navy"}`}
           aria-label="Toggle mobile menu"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
