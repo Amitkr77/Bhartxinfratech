@@ -71,7 +71,7 @@ const Navbar = () => {
         >
           <div className="w-18 h-18 white-gradient rounded-sm flex items-center justify-center mr-3">
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="Bharatx Logo"
               className="w-18 h-18 rounded-sm object-contain"
             />
