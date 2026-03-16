@@ -45,6 +45,7 @@ across India.
 
 <a
 href="https://facebook.com"
+aria-label="Facebook"
 target="_blank"
 rel="noopener noreferrer"
 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
@@ -54,6 +55,7 @@ className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center h
 
 <a
 href="https://twitter.com"
+aria-label="Twitter"
 target="_blank"
 rel="noopener noreferrer"
 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
@@ -63,6 +65,7 @@ className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center h
 
 <a
 href="https://instagram.com"
+aria-label="Instagram"
 target="_blank"
 rel="noopener noreferrer"
 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
@@ -72,6 +75,7 @@ className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center h
 
 <a
 href="https://linkedin.com"
+aria-label="LinkedIn"
 target="_blank"
 rel="noopener noreferrer"
 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
