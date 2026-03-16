@@ -54,7 +54,7 @@ Elite Infrastructure Development
 </span>
 </div>
 
-<h1 className="text-5xl md:text-7xl text-white font-display font-bold leading-tight mb-8">
+<h1 className="text-5xl md:text-7xl leading-[1.1] text-white font-display font-bold leading-tight mb-8">
 Building Reliable <span className="text-gold">Infrastructure</span>{" "}
 for a Growing India
 </h1>
