@@ -54,8 +54,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-1/2 -translate-x-1/2 w-full z-50 bg-black/70 backdrop-blur-md py-4 shadow-xl border border-white/10">
-
+    <nav
+  className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-4 transition-all duration-300
+  ${
+    isScrolled
+      ? "bg-black/70 shadow-xl border border-gray-200 backdrop-blur-md"
+      : "bg-transparent border-transparent"
+  }`}
+>
       <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
 
         {/* Logo */}
@@ -91,7 +97,7 @@ const Navbar = () => {
               key={item.id}
               onClick={() => handleNavigation(item.path)}
               className={`text-sm font-medium tracking-wide transition-colors hover:text-gold ${
-                activePage === item.id ? "text-gold" : "text-white/80"
+                activePage === item.id ? "text-gold" : "text-gray-400"
               }`}
             >
               {item.label}
@@ -105,7 +111,7 @@ const Navbar = () => {
             ${
               location.pathname === "/enquiry"
                 ? "bg-gold text-navy border-gold"
-                : "border-white text-white hover:bg-gold hover:text-navy"
+                : "border-gray-400 text-gray-400 hover:bg-gold hover:text-navy"
             }`}
           >
             ENQUIRE
