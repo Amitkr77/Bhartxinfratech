@@ -1,6 +1,10 @@
 import React from "react";
 import { Globe, Users, MapPin, Phone, Mail } from "lucide-react";
 import { useNavigate,  Link } from "react-router-dom";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
 
@@ -38,6 +42,42 @@ across India.
 </p>
 
 <div className="flex space-x-4">
+
+<a
+href="https://facebook.com"
+target="_blank"
+rel="noopener noreferrer"
+className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
+>
+<FaFacebookF size={16} />
+</a>
+
+<a
+href="https://twitter.com"
+target="_blank"
+rel="noopener noreferrer"
+className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
+>
+<FaXTwitter size={16} />
+</a>
+
+<a
+href="https://instagram.com"
+target="_blank"
+rel="noopener noreferrer"
+className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
+>
+<FaInstagram size={16} />
+</a>
+
+<a
+href="https://linkedin.com"
+target="_blank"
+rel="noopener noreferrer"
+className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all duration-300"
+>
+<FaLinkedinIn size={16} />
+</a>  
 
 <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors cursor-pointer">
 <Globe size={18} />
