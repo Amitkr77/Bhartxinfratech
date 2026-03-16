@@ -28,7 +28,7 @@ loop
 muted
 playsInline
 preload="none"
-className="w-full h-full object-cover scale-110 animate-[slowZoom_30s_linear_infinite]"
+className="w-full h-full object-cover object-top"
 >
 <source src="/hero1.mp4" type="video/mp4" />
 </video>
