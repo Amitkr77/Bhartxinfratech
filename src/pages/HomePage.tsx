@@ -27,7 +27,8 @@ autoPlay
 loop
 muted
 playsInline
-className="w-full h-full object-cover scale-110 animate-[slowZoom_20s_linear_infinite]"
+preload="metadata"
+className="w-full h-full object-cover scale-110 animate-[slowZoom_30s_linear_infinite]"
 >
 <source src="/hero1.mp4" type="video/mp4" />
 </video>
@@ -40,7 +41,8 @@ className="w-full h-full object-cover scale-110 animate-[slowZoom_20s_linear_inf
 
 <motion.div
 initial={{ opacity: 0, y: 30 }}
-animate={{ opacity: 1, y: 0 }}
+whileInView={{ opacity: 1, y: 0 }}
+viewport={{ once: true }}
 transition={{ duration: 0.8 }}
 className="max-w-3xl"
 >
@@ -181,6 +183,7 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 
 <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
 <img
+loading="lazy"
 src="https://picsum.photos/seed/blueprint/800/800"
 alt="bg"
 className="w-full h-full object-cover"
@@ -241,6 +244,7 @@ onClick={() => navigate("/services")}
 <div className="relative overflow-hidden mb-6 aspect-video">
 
 <img
+loading="lazy"
 src={item.img}
 alt={item.title}
 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -277,6 +281,7 @@ referrerPolicy="no-referrer"
 <div className="relative">
 
 <img
+loading="lazy"
 src="https://picsum.photos/seed/construction-site/800/600"
 alt="Vision"
 className="w-full rounded-sm shadow-2xl"
