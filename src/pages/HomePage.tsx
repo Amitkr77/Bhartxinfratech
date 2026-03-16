@@ -183,7 +183,6 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 
 <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
 <img
-loading="lazy"
 src="https://picsum.photos/seed/blueprint/800/800"
 alt="bg"
 className="w-full h-full object-cover"
