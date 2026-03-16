@@ -97,7 +97,7 @@ const Navbar = () => {
               key={item.id}
               onClick={() => handleNavigation(item.path)}
               className={`text-sm font-medium tracking-wide transition-colors hover:text-gold ${
-                activePage === item.id ? "text-gold" : "text-gray-400"
+                activePage === item.id ? "text-gold" : "text-gray-500"
               }`}
             >
               {item.label}
@@ -111,7 +111,7 @@ const Navbar = () => {
             ${
               location.pathname === "/enquiry"
                 ? "bg-gold text-navy border-gold"
-                : "border-gray-400 text-gray-400 hover:bg-gold hover:text-navy"
+                : "border-gray-500 text-gray-500 hover:bg-gold hover:text-navy"
             }`}
           >
             ENQUIRE
