@@ -160,8 +160,8 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="/saroj.png"
-                    alt="Technical Director"
+                    src="../saroj.png"
+                    alt="SAROJ KUMAR"
                     className="w-full h-full object-cover object-top"
                   />
 
@@ -190,8 +190,8 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="/ganesh.png"
-                    alt="Technical Director"
+                    src="../ganesh.png"
+                    alt="GANESH SHANKER VIDYARTHI"
                     className="w-full h-full object-cover object-top"
                   />
 
@@ -219,7 +219,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="/anuj.png"
+                    src="../anuj.png"
                     alt="Anuj Kumar"
                     className="w-full h-full object-cover object-top"
                   />
