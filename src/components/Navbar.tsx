@@ -58,7 +58,7 @@ const Navbar = () => {
   className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-2 transition-all duration-300
   ${
     isScrolled
-      ? "bg-black/80 shadow-xl backdrop-blur-md"
+      ? "bg-white/80 shadow-xl backdrop-blur-md"
       : "bg-transparent border-transparent"
   }`}
 >
@@ -71,7 +71,7 @@ const Navbar = () => {
         >
           <div className="w-18 h-18 white-gradient rounded-sm flex items-center justify-center mr-3">
             <img
-              src="/logo.PNG"
+              src="/logo copy.png"
               alt="Bharatx Logo"
               className="w-18 h-18 rounded-sm object-contain"
             />
@@ -97,7 +97,7 @@ const Navbar = () => {
               key={item.id}
               onClick={() => handleNavigation(item.path)}
               className={`text-sm font-medium tracking-wide transition-colors hover:text-gold ${
-                activePage === item.id? "text-gold" : isScrolled ? "text-white": "text-blue text-bold"
+                activePage === item.id? "text-gold" : isScrolled ? "text-navy": "text-blue text-bold"
               }`}
             >
               {item.label}
@@ -112,7 +112,7 @@ const Navbar = () => {
               location.pathname === "/enquiry"
                 ? "bg-gold text-blue text-bold border-gold"
                 : isScrolled
-                ? "border-white text-white hover:bg-gold hover:text-navy"
+                ? "border-navy-500 text-navy-500 hover:bg-gold hover:text-navy"
                 : "border-navy text-navy hover:bg-gold hover:text-navy"
             }`}
           >
@@ -155,7 +155,7 @@ const Navbar = () => {
                     setIsMobileMenuOpen(false);
                   }}
                   className={`text-left text-lg font-medium ${
-                    activePage === item.id ? "text-gold" : "text-white"
+                    activePage === item.id ? "text-gold" : "text-navy-500"
                   }`}
                 >
                   {item.label}
