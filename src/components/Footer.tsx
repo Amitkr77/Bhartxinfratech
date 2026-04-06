@@ -24,7 +24,7 @@ return (
 <div className="w-18 h-18 white-gradient rounded-sm flex items-center justify-center mr-3">
             <img
               loading="lazy"
-              src="/logo.webp"
+              src="/logo.jpg"
               alt="Bharatx Logo"
               className="w-18 h-18 rounded-sm object-contain"
             />
