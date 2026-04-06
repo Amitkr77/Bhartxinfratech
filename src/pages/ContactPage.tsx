@@ -7,7 +7,7 @@ const [name,setName]=useState("");
 const [phone,setPhone]=useState("");
 const [email,setEmail]=useState("");
 const [message,setMessage]=useState("");
-const [errors,setErrors]=useState<{name?:string,email?:string,message?:string}>({});
+const [errors,setErrors]=useState<{name?:string,email?:string,phone?:string,message?:string}>({});
 
 const handleSubmit=(e:any)=>{
 
