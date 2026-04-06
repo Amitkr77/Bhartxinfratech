@@ -6,8 +6,9 @@ export default function ContactPage() {
 const [name,setName]=useState("");
 const [phone,setPhone]=useState("");
 const [email,setEmail]=useState("");
+const [requirement,setRequirement]=useState("");
 const [message,setMessage]=useState("");
-const [errors,setErrors]=useState<{name?:string,email?:string,phone?:string,message?:string}>({});
+const [errors,setErrors]=useState<{name?:string,email?:string,phone?:string,requirement?:string,message?:string}>({});
 
 const handleSubmit=(e:any)=>{
 
@@ -29,6 +30,10 @@ if(!email.trim()){
 newErrors.email="Email is required";
 }else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
 newErrors.email="Enter a valid email";
+}
+
+if(!requirement.trim()){
+newErrors.requirement="Please select a project requirement";
 }
 
 if(!message.trim()){
@@ -159,15 +164,23 @@ className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-
 Project Requirement
 </label>
 
-<select className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-none">
-
-<option>Road Construction</option>
-<option>Bridge & Flyover</option>
-<option>Civil Infrastructure</option>
-<option>Government Tender</option>
-<option>Other</option>
-
+<select
+  value={requirement}
+  onChange={(e)=>setRequirement(e.target.value)}
+  className="w-full p-4 bg-navy/5 border border-navy/10 focus:border-gold outline-none"
+>
+  <option value="">Select Requirement</option>
+  <option>Road Construction</option>
+  <option>Bridge & Flyover</option>
+  <option>Civil Infrastructure</option>
+  <option>Government Tender</option>
+  <option>Other</option>
 </select>
+
+{errors.requirement && (
+<p className="text-red-500 text-sm mt-1">{errors.requirement}</p>
+)}
+
 
 </div>
 
@@ -266,7 +279,7 @@ Contact Numbers
 
 <div>
 <h4 className="text-navy font-bold text-lg mb-1">
-Email Channels
+Email Channels 
 </h4>
 
 <p className="text-navy/60">
