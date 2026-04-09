@@ -147,37 +147,36 @@ Years Excellence
 
     {/* Logos Grid */}
     <div className="flex items-center gap-10 overflow-x-auto whitespace-nowrap py-4">
+        {[
+          "/nhai.png",
+          "/mcd.png",
+          "/ntpc.png",
+          "/iocl.png",
+          "/wrd.png",
+          "/pmc.png",
+          "/phed.png",
+          "/rwd.png",
+          "/rcd bihar.png",
+          "/bcd bihar.png",
+        ].map((logo, i) => (
 
-  {[
-    "/nhai.png",
-    "/mcd.png",
-    "/ntpc.png",
-    "/iocl.png",
-    "/wrd.png",
-    "/pmc.png",
-    "/phed.png",
-    "/rwd.png",
-    "/rcd bihar.png",
-    "/bcd bihar.png",
-  ].map((logo, i) => (
+          <div
+            key={i}
+            className="flex-shrink-0 flex items-center justify-center"
+          >
+            <img
+              src={logo}
+              alt="partner"
+              className="h-20 object-contain transition-all duration-300"
+            />
+          </div>
 
-    <div
-      key={i}
-      className="flex-shrink-0 flex items-center justify-center"
-    >
-      <img
-        src={logo}
-        alt="partner"
-        className="h-20 object-contain transition-all duration-300"
-      />
-    </div>
+        ))}
 
-  ))}
+      </div>
 
-</div>
-
-  </div>
-</section>
+        </div>
+      </section>
 
 {/* Highlights Section 
 
@@ -272,7 +271,7 @@ VIEW ALL SERVICES
 
 </div>
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-2">
 
 {[
 {
@@ -286,9 +285,14 @@ title: "Bridge Engineering",
 desc: "Structural design and execution of complex bridges."
 },
 {
-img: "/civilinfra.png",
+img: "/civilcons.png",
 title: "Civil Infrastructure",
 desc: "Government buildings and public utility facilities."
+},
+{
+  img:"powerstation.png",
+  title:"Power Infrastructure",
+  desc:"Substations, transmission lines, and power plants."
 }
 ].map((item, i) => (
 
@@ -339,7 +343,7 @@ referrerPolicy="no-referrer"
 
 <img
 loading="lazy"
-src="https://picsum.photos/seed/construction-site/800/600"
+src="/civilinfra.png"
 alt="Vision"
 className="w-full rounded-sm shadow-2xl"
 referrerPolicy="no-referrer"
