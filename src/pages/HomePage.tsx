@@ -122,7 +122,63 @@ Years Excellence
 
 </section>
 
-{/* Highlights Section */}
+{/* Institutional Partnerships Section */}
+
+<section className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* Section Header */}
+    <div className="text-center mb-16">
+
+      <p className="text-gold font-bold tracking-[0.3em] text-lg uppercase mb-4">
+        Institutional Partnerships
+      </p>
+
+      <h2 className="text-4xl md:text-5xl font-display font-bold text-navy mb-6">
+        Trusted by Government Departments
+      </h2>
+
+      {/*<p className="text-navy/60 max-w-2xl mx-auto text-lg">
+        Collaborating with leading public sector organizations to deliver
+        high-impact infrastructure projects across India.
+      </p>*/}
+
+    </div>
+
+    {/* Logos Grid */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 items-center">
+
+      {[
+        "/nhai.png",
+        "/mcd.png",
+        "/ntpc.png",
+        "/iocl.png",
+        "/wrd.png",
+        "/pmc.png",
+        "/phed.png",
+        "/rwd.png",
+        "/rcd bihar.png",
+      ].map((logo, i) => (
+
+        <div
+          key={i}
+          className="flex items-center justify-center group"
+        >
+          <img
+            src={logo}
+            alt="partner"
+            className="h-34 object-contain transition-all duration-300"
+          />
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+</section>
+
+{/* Highlights Section 
 
 <section className="py-24 bg-white">
 
@@ -175,7 +231,7 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 
 </div>
 </div>
-</section>
+</section> */}
 
 {/* Services Preview */}
 
@@ -219,17 +275,17 @@ VIEW ALL SERVICES
 
 {[
 {
-img: "https://picsum.photos/seed/road/600/400",
+img: "/roadcons.png",
 title: "Road Construction",
 desc: "Highways, expressways, and urban road networks."
 },
 {
-img: "https://picsum.photos/seed/bridge/600/400",
+img: "/bridgecons.png",
 title: "Bridge Engineering",
 desc: "Structural design and execution of complex bridges."
 },
 {
-img: "https://picsum.photos/seed/building/600/400",
+img: "/civilinfra.png",
 title: "Civil Infrastructure",
 desc: "Government buildings and public utility facilities."
 }

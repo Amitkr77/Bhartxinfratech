@@ -77,7 +77,7 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className={`w-18 h-18 rounded-sm object-contain ${isScrolled ? "w-24 h-24" : "w-18 h-18"}`}
+              className="w-18 h-18 rounded-sm object-contain"
             />
           </div>
 
