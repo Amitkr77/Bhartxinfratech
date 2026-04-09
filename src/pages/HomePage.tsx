@@ -146,35 +146,41 @@ Years Excellence
     </div>
 
     {/* Logos Grid */}
-    <div className="flex items-center gap-10 py-4">
-        {[
-          "/nhai.png",
-          "/ntpc.png",
-          "/iocl.png",
-          "/rcd bihar.png",
-          "/bcd bihar.png",
-          "/rwd.png",
-          "/wrd.png",         
-          "/phed.png",
-          "/mcd.png",
-          "/pmc.png",
-        ].map((logo, i) => (
-
-          <div
-            key={i}
-            className="flex-shrink-0 flex items-center justify-center"
-          >
+      <div className="overflow-hidden py-6">
+        <div className="flex gap-12 animate-scroll">
+          {[
+            "/nhai.png",
+            "/ntpc.png",
+            "/iocl.png",
+            "/rcd bihar.png",
+            "/bcd bihar.png",
+            "/wrd.png",         
+            "/phed.png",
+            "/rwd.png",
+            "/mcd.png",
+            "/pmc.png",
+          ,
+          // duplicate for seamless loop 
+            "/nhai.png",
+            "/ntpc.png",
+            "/iocl.png",
+            "/rcd bihar.png",
+            "/bcd bihar.png",
+            "/wrd.png",         
+            "/phed.png",
+            "/rwd.png",
+            "/mcd.png",
+            "/pmc.png",
+          ].map((logo, i) => (
             <img
+              key={i}
               src={logo}
               alt="partner"
-              className="h-20 object-contain transition-all duration-300"
+              className="h-40 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
             />
-          </div>
-
-        ))}
-
+          ))}
+        </div>
       </div>
-
         </div>
       </section>
 
@@ -237,7 +243,7 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 
 <section className="py-24 bg-navy text-white relative overflow-hidden">
 
-<div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+{/*<div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
 <img
 loading="lazy"
 src="https://picsum.photos/seed/blueprint/800/800"
@@ -245,7 +251,7 @@ alt="bg"
 className="w-full h-full object-cover"
 referrerPolicy="no-referrer"
 />
-</div>
+</div>*/}
 
 <div className="max-w-7xl mx-auto px-6 relative z-10">
 
