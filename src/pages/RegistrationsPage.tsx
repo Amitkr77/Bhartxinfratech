@@ -1,4 +1,5 @@
 import { Shield, CheckCircle2, Building2, Factory, Cpu, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function RegistrationsPage() {
 return (
@@ -187,7 +188,7 @@ desc:"Lifecycle monitoring and infrastructure services."
 Strategic Partnerships
 </h2>
 
-<div className="grid md:grid-cols-2 gap-10">
+<div className="grid md:grid-cols-3 gap-8">
 
 {/* Central Govt */}
 
@@ -214,6 +215,38 @@ MoRTH
 
 <span className="px-3 py-1 border border-white/30 rounded">
 Railway Board
+</span>
+
+</div>
+
+</div>
+
+
+{/* State Govt */}
+
+<div className="bg-gradient-to-br from-blue-500 to-blue-300 text-white p-10 rounded-xl">
+
+<h3 className="text-xl font-bold mb-4">
+ State Government (Bihar)
+</h3>
+
+<p className="text-white/70 mb-6">
+Supporting the State Infrastructure Pipeline with specialized roadway
+and connectivity expertise.
+</p>
+
+<div className="flex gap-3 text-xs">
+
+<span className="px-3 py-1 border border-white/30 rounded">
+PWD
+</span>
+
+<span className="px-3 py-1 border border-white/30 rounded">
+RCD
+</span>
+
+<span className="px-3 py-1 border border-white/30 rounded">
+RWD
 </span>
 
 </div>
@@ -276,10 +309,11 @@ Our engineering division is equipped for mega-scale national infrastructure proj
 </p>
 
 </div>
-
+<Link to="/contact">
 <button className="mt-6 md:mt-0 px-8 py-4 gold-gradient text-navy font-bold">
 Request Company Profile
 </button>
+</Link>
 
 </div>
 
