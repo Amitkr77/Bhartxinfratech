@@ -153,9 +153,9 @@ Years Excellence
           "/iocl.png",
           "/rcd bihar.png",
           "/bcd bihar.png",
+          "/rwd.png",
           "/wrd.png",         
           "/phed.png",
-          "/rwd.png",
           "/mcd.png",
           "/pmc.png",
         ].map((logo, i) => (
