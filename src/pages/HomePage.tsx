@@ -93,8 +93,8 @@ GET IN TOUCH
 <div className="glass-card p-10 flex space-x-12">
 
 <div>
-<p className="text-gold font-bold text-3xl mb-1">₹500Cr+</p>
-<p className="text-white/60 text-[10px] tracking-widest uppercase font-semibold">
+<p className="text-white font-bold text-3xl mb-1">₹500Cr+</p>
+<p className="text-white text-[10px] tracking-widest uppercase font-semibold">
 Ongoing Projects
 </p>
 </div>
@@ -102,8 +102,8 @@ Ongoing Projects
 <div className="w-[1px] h-12 bg-white/10" />
 
 <div>
-<p className="text-gold font-bold text-3xl mb-1">250+</p>
-<p className="text-white/60 text-[10px] tracking-widest uppercase font-semibold">
+<p className="text-white font-bold text-3xl mb-1">250+</p>
+<p className="text-white text-[10px] tracking-widest uppercase font-semibold">
 Heavy Equipment
 </p>
 </div>
@@ -111,8 +111,8 @@ Heavy Equipment
 <div className="w-[1px] h-12 bg-white/10" />
 
 <div>
-<p className="text-gold font-bold text-3xl mb-1">15+</p>
-<p className="text-white/60 text-[10px] tracking-widest uppercase font-semibold">
+<p className="text-white font-bold text-3xl mb-1">15+</p>
+<p className="text-white text-[10px] tracking-widest uppercase font-semibold">
 Years Excellence
 </p>
 </div>

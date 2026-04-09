@@ -55,13 +55,13 @@ const Navbar = () => {
 
   return (
     <nav
-  className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-2 transition-all duration-300
-  ${
-    isScrolled
-      ? "bg-white/80 shadow-xl backdrop-blur-md"
-      : "bg-transparent border-transparent"
-  }`}
->
+      className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-2 transition-all duration-300
+      ${
+        isScrolled
+          ? "bg-white/80 shadow-xl backdrop-blur-md"
+          : "bg-transparent border-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
 
         {/* Logo */}
@@ -70,10 +70,14 @@ const Navbar = () => {
           onClick={() => handleNavigation("/")}
         >
           <div className="w-18 h-18 white-gradient rounded-sm flex items-center justify-center mr-3">
-            <img
-              src="/logo copy.png"
+            <motion.img
+              key={isScrolled ? "dark" : "light"}
+              src={isScrolled ? "/logo2.png" : "/logo2.png"}
               alt="Bharatx Logo"
-              className="w-18 h-18 rounded-sm object-contain"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className={`w-18 h-18 rounded-sm object-contain ${isScrolled ? "w-24 h-24" : "w-18 h-18"}`}
             />
           </div>
 
