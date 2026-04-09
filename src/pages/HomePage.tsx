@@ -146,43 +146,65 @@ Years Excellence
     </div>
 
     {/* Logos Grid */}
-      <div className="overflow-hidden py-6">
-        <div className="flex gap-12 animate-scroll">
-          {[
-            "/nhai.png",
-            "/ntpc.png",
-            "/iocl.png",
-            "/rcd bihar.png",
-            "/bcd bihar.png",
-            "/wrd.png",         
-            "/phed.png",
-            "/rwd.png",
-            "/mcd.png",
-            "/pmc.png",
-          ,
-          // duplicate for seamless loop 
-            "/nhai.png",
-            "/ntpc.png",
-            "/iocl.png",
-            "/rcd bihar.png",
-            "/bcd bihar.png",
-            "/wrd.png",         
-            "/phed.png",
-            "/rwd.png",
-            "/mcd.png",
-            "/pmc.png",
-          ].map((logo, i) => (
-            <img
-              key={i}
-              src={logo}
-              alt="partner"
-              className="h-40 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
-            />
-          ))}
+      
+      {/* Marquee */}
+      <div className="relative overflow-hidden">
+
+        {/* Fade edges (premium look) */}
+        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10" />
+        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10" />
+
+        <div className="flex w-max animate-scroll">
+
+          {/* First Set */}
+          <div className="flex items-center gap-12">
+            {[
+              "/nhai.png",
+              "/ntpc.png",
+              "/iocl.png",
+              "/rcd bihar.png",
+              "/bcd bihar.png",
+              "/wrd.png",         
+              "/phed.png",
+              "/rwd.png",
+              "/mcd.png",
+              "/pmc.png",
+            ].map((logo, i) => (
+              <img
+                key={i}
+                src={logo}
+                alt="partner"
+                className="h-40 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
+              />
+            ))}
+          </div>
+
+          {/* Duplicate Set (for seamless loop) */}
+          <div className="flex items-center gap-12 ml-12">
+            {[
+              "/nhai.png",
+              "/ntpc.png",
+              "/iocl.png",
+              "/rcd bihar.png",
+              "/bcd bihar.png",
+              "/wrd.png",         
+              "/phed.png",
+              "/rwd.png",
+              "/mcd.png",
+              "/pmc.png",
+            ].map((logo, i) => (
+              <img
+                key={"dup-" + i}
+                src={logo}
+                alt="partner"
+                className="h-40 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
+              />
+            ))}
+          </div>
         </div>
       </div>
-        </div>
-      </section>
+    </div>
+  </section>
 
 {/* Highlights Section 
 
