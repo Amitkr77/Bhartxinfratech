@@ -69,15 +69,16 @@ const Navbar = () => {
           className="flex items-center cursor-pointer"
           onClick={() => handleNavigation("/")}
         >
-          <div className="w-30 h-30 white-gradient rounded-sm flex items-center justify-center mr-3">
+          <div className="w-20 h-20 white-gradient rounded-sm flex items-center justify-center mr-3">
             <motion.img
-              key={isScrolled ? "dark" : "light"}
               src={isScrolled ? "/logo2.png" : "/logo2.png"}
               alt="Bharatx Logo"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              animate={{
+                height: isScrolled ? 72 : 90,   // 👈 size change
+                width: isScrolled ? 72 : 90,
+              }}
               transition={{ duration: 0.3 }}
-              className="w-30 h-30 rounded-sm object-contain"
+              className="object-contain"
             />
           </div>
 
