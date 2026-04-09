@@ -146,34 +146,35 @@ Years Excellence
     </div>
 
     {/* Logos Grid */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 items-center">
+    <div className="flex items-center gap-10 overflow-x-auto whitespace-nowrap py-4">
 
-      {[
-        "/nhai.png",
-        "/mcd.png",
-        "/ntpc.png",
-        "/iocl.png",
-        "/wrd.png",
-        "/pmc.png",
-        "/phed.png",
-        "/rwd.png",
-        "/rcd bihar.png",
-      ].map((logo, i) => (
+  {[
+    "/nhai.png",
+    "/mcd.png",
+    "/ntpc.png",
+    "/iocl.png",
+    "/wrd.png",
+    "/pmc.png",
+    "/phed.png",
+    "/rwd.png",
+    "/rcd bihar.png",
+    "/bcd bihar.png",
+  ].map((logo, i) => (
 
-        <div
-          key={i}
-          className="flex items-center justify-center group"
-        >
-          <img
-            src={logo}
-            alt="partner"
-            className="h-34 object-contain transition-all duration-300"
-          />
-        </div>
-
-      ))}
-
+    <div
+      key={i}
+      className="flex-shrink-0 flex items-center justify-center"
+    >
+      <img
+        src={logo}
+        alt="partner"
+        className="h-20 object-contain transition-all duration-300"
+      />
     </div>
+
+  ))}
+
+</div>
 
   </div>
 </section>
