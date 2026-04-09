@@ -180,7 +180,7 @@ Years Excellence
           </div>
 
           {/* Duplicate Set (for seamless loop) */}
-          <div className="flex items-center gap-12 ml-12">
+          <div className="flex items-center gap-12">
             {[
               "/nhai.png",
               "/ntpc.png",
