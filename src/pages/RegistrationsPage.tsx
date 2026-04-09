@@ -191,7 +191,7 @@ Strategic Partnerships
 
 {/* Central Govt */}
 
-<div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-10 rounded-xl">
+<div className="bg-gradient-to-br from-amber-600 to-amber-400 text-white p-10 rounded-xl">
 
 <h3 className="text-xl font-bold mb-4">
 Central Government (India)
