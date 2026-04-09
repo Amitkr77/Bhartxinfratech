@@ -74,8 +74,8 @@ const Navbar = () => {
               src={isScrolled ? "/logo2.png" : "/logo2.png"}
               alt="Bharatx Logo"
               animate={{
-                height: isScrolled ? 72 : 90,   // 👈 size change
-                width: isScrolled ? 72 : 90,
+                height: isScrolled ? 72 : 100,   // 👈 size change
+                width: isScrolled ? 72 : 100,
               }}
               transition={{ duration: 0.3 }}
               className="object-contain"

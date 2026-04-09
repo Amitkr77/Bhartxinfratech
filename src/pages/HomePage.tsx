@@ -124,11 +124,11 @@ Years Excellence
 
 {/* Institutional Partnerships Section */}
 
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
+<section className="py-10 bg-white">
+  <div className="max-w-7xl mx-auto px-6 text-center">
 
     {/* Section Header */}
-    <div className="text-center mb-16">
+    <div className="text-center mb-10">
 
       <p className="text-gold font-bold tracking-[0.3em] text-lg uppercase mb-4">
         Institutional Partnerships
@@ -146,18 +146,18 @@ Years Excellence
     </div>
 
     {/* Logos Grid */}
-    <div className="flex items-center gap-10 overflow-x-auto whitespace-nowrap py-4">
+    <div className="flex items-center gap-10 py-4">
         {[
           "/nhai.png",
-          "/mcd.png",
           "/ntpc.png",
           "/iocl.png",
-          "/wrd.png",
-          "/pmc.png",
-          "/phed.png",
-          "/rwd.png",
           "/rcd bihar.png",
           "/bcd bihar.png",
+          "/wrd.png",         
+          "/phed.png",
+          "/rwd.png",
+          "/mcd.png",
+          "/pmc.png",
         ].map((logo, i) => (
 
           <div
