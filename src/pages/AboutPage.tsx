@@ -49,7 +49,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
         <div className="grid grid-cols-2 gap-4">
 
           <div className="bg-navy/5 p-8 text-center">
-            <p className="text-gold font-bold text-4xl mb-2">2026</p>
+            <p className="text-gold font-bold text-4xl mb-2">2025</p>
             <p className="text-navy/60 text-xs font-bold uppercase tracking-widest">
               Incorporated
             </p>
@@ -160,7 +160,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="../saroj.png"
+                    src="/saroj.png"
                     alt="SAROJ KUMAR"
                     className="w-full h-full object-cover object-top"
                   />
@@ -190,7 +190,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="../ganesh.png"
+                    src="/ganesh.png"
                     alt="GANESH SHANKER VIDYARTHI"
                     className="w-full h-full object-cover object-top"
                   />
@@ -219,7 +219,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
 
                   <img
-                    src="../anuj.png"
+                    src="/anuj.png"
                     alt="Anuj Kumar"
                     className="w-full h-full object-cover object-top"
                   />
