@@ -38,9 +38,9 @@ const Navbar = () => {
     { id: "services", label: "Services", path: "/services" },
     { id: "projects", label: "Projects", path: "/projects" },
     { id: "registrations", label: "Expertise", path: "/registrations" },
-    { id: "tech", label: "Innovation", path: "/tech" },
+  /*{ id: "tech", label: "Innovation", path: "/tech" },
     { id: "careers", label: "Careers", path: "/careers" },
-   /* { id: "vendor", label: "Vendor Portal", path: "/vendor-portal" },
+    { id: "vendor", label: "Vendor Portal", path: "/vendor-portal" },
     { id: "investors", label: "Investors", path: "/investors" },*/
     { id: "contact", label: "Contact", path: "/contact" }
   ];
@@ -101,7 +101,7 @@ const Navbar = () => {
             <button
               key={item.id}
               onClick={() => handleNavigation(item.path)}
-              className={`text-sm font-medium tracking-wide transition-colors hover:text-gold ${
+              className={`text-lg font-medium tracking-wide transition-colors hover:text-gold ${
                 activePage === item.id? "text-gold" : isScrolled ? "text-navy": "text-blue text-bold"
               }`}
             >
@@ -112,7 +112,7 @@ const Navbar = () => {
 
           <button
             onClick={() => handleNavigation("/enquiry")}
-            className={`px-6 py-2 border text-sm font-semibold transition-all duration-300
+            className={`px-6 py-2 border text-lg font-semibold transition-all duration-300
             ${
               location.pathname === "/enquiry"
                 ? "bg-gold text-blue text-bold border-gold"
