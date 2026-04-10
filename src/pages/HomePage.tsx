@@ -13,15 +13,23 @@ export default function HomePage() {
 
 const navigate = useNavigate();
 
+const logos = [
+  "/homeasy.png",
+  "/biddrx.png",
+  "/Casters.png",
+  "/kynyx.png",
+  "/cehro.png",
+  "/sumedha.webp",
+  "/ventures.png",
+  "/ecotwist.png",
+  "/logo2.png"
+];
+
 return (
-
 <div className="overflow-hidden">
-
 {/* Hero Section */}
 <section className="relative min-h-screen flex items-center pt-24 md:pt-32">
-
 <div className="absolute inset-0 z-0">
-
 <video
 autoPlay
 loop
@@ -149,58 +157,20 @@ Years Excellence
       
       {/* Marquee */}
       <div className="relative overflow-hidden">
-
-        {/* Fade edges (premium look) */}
-        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10" />
+        {/* Fade edges */}
+        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
+        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
 
         <div className="flex w-max animate-scroll">
 
-          {/* First Set */}
-          <div className="flex items-center gap-12">
-            {[
-              "/nhai.png",
-              "/ntpc.png",
-              "/iocl.png",
-              "/rcd bihar.png",
-              "/bcd bihar.png",
-              "/wrd.png",         
-              "/phed.png",
-              "/rwd.png",
-              "/mcd.png",
-              "/pmc.png",
-            ].map((logo, i) => (
-              <img
-                key={i}
-                src={logo}
-                alt="partner"
-                className="h-40 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
-              />
-            ))}
-          </div>
-
-          {/* Duplicate Set (for seamless loop) */}
-          <div className="flex items-center gap-12">
-            {[
-              "/nhai.png",
-              "/ntpc.png",
-              "/iocl.png",
-              "/rcd bihar.png",
-              "/bcd bihar.png",
-              "/wrd.png",         
-              "/phed.png",
-              "/rwd.png",
-              "/mcd.png",
-              "/pmc.png",
-            ].map((logo, i) => (
-              <img
-                key={"dup-" + i}
-                src={logo}
-                alt="partner"
-                className="h-40 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
-              />
-            ))}
-          </div>
+          {[...logos, ...logos].map((logo, i) => (
+            <img
+              key={i}
+              src={logo}
+              alt="client"
+              className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0 px-6"
+            />
+          ))}
         </div>
       </div>
     </div>
@@ -381,45 +351,45 @@ referrerPolicy="no-referrer"
       <div className="flex w-max animate-scroll">
 
         {/* First Set */}
-        <div className="flex items-center gap-16">
+        <div className="flex items-center gap-10 sm:gap-16 md:gap-20 lg:gap-24">
           {[
+            "/homeasy.png",
             "/biddrx.png",
             "/Casters.png",
-            "/cehro.png",
-            "/sumedha.webp",
-            "/homeasy.png",
-            "/ventures.png",
             "/kynyx.png",
+            "/cehro.png",
+            "/sumedha.webp",            
+            "/ventures.png",
             "/ecotwist.png",
-            "/infratech.png"
+            "/logo2.png"
           ].map((logo, i) => (
             <img
               key={i}
               src={logo}
               alt="client"
-              className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0"
+              className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0 px-2"
             />
           ))}
         </div>
 
         {/* Duplicate (for loop) */}
-        <div className="flex items-center gap-16">
+        <div className="flex items-center gap-10 sm:gap-16 md:gap-20 lg:gap-24 ml-20">
           {[
+            "/homeasy.png",
             "/biddrx.png",
             "/Casters.png",
-            "/cehro.png",
-            "/sumedha.webp",
-            "/homeasy.png",
-            "/ventures.png",
             "/kynyx.png",
+            "/cehro.png",
+            "/sumedha.webp",            
+            "/ventures.png",
             "/ecotwist.png",
-            "/infratech.png"
+            "/logo2.png"
           ].map((logo, i) => (
             <img
               key={"dup-" + i}
               src={logo}
               alt="client"
-              className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0"
+              className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0 px-2"
             />
           ))}
         </div>
