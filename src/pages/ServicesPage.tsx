@@ -5,58 +5,63 @@ export default function ServicesPage() {
 
 const services = [
 {
-image: "/road.jpg",
-title: "Road Construction & Maintenance",
-desc: "Construction and rehabilitation of highways, expressways, and major district roads using advanced paving technology.",
-features: [
-"Highway Development",
-"Road Rehabilitation",
-"Pavement Design",
-"Maintenance Contracts"
+  icon: <Route size={40} />,
+  image: "/road.jpg",
+  title: "Road Construction & Maintenance",
+  desc: "Construction and rehabilitation of highways, expressways, and major district roads using advanced paving technology.",
+  features: [
+  "Highway Development",
+  "Road Rehabilitation",
+  "Pavement Design",
+  "Maintenance Contracts"
 ]
 },
 {
-image:"/flyover.jpg",
-title: "Bridge & Flyover Construction",
-desc: "Structural engineering and construction of RCC and steel bridges, flyovers, and overpasses for urban and rural connectivity.",
-features: [
-"Structural Engineering",
-"Foundation Piling",
-"Superstructure Erection",
-"Bridge Maintenance"
+  icon: <Construction size={40} />,
+  image:"/flyover.jpg",
+  title: "Bridge & Flyover Construction",
+  desc: "Structural engineering and construction of RCC and steel bridges, flyovers, and overpasses for urban and rural connectivity.",
+  features: [
+  "Structural Engineering",
+  "Foundation Piling",
+  "Superstructure Erection",
+  "Bridge Maintenance"
 ]
 },
 {
-image:"/building.jpg",
-title: "Building Construction",
-desc: "Development of government offices, institutional buildings, and public infrastructure facilities with modern amenities.",
-features: [
-"Government Offices",
-"Educational Institutions",
-"Healthcare Facilities",
-"Public Utilities"
+  icon: <Landmark size={40} />,
+  image:"/building.jpg",
+  title: "Building Construction",
+  desc: "Development of government offices, institutional buildings, and public infrastructure facilities with modern amenities.",
+  features: [
+  "Government Offices",
+  "Educational Institutions",
+  "Healthcare Facilities",
+  "Public Utilities"
 ]
 },
 {
-image:"/seawageinfra.png",
-title: "Infrastructure Development",
-desc: "Execution of large-scale public infrastructure projects including smart city works and urban development initiatives.",
-features: [
-"Smart City Projects",
-"Urban Drainage Systems",
-"Public Parks",
-"Utility Relocation"
+  icon: <Construction size={40} />,
+  image:"/seawageinfra.png",
+  title: "Infrastructure Development",
+  desc: "Execution of large-scale public infrastructure projects including smart city works and urban development initiatives.",
+  features: [
+  "Smart City Projects",
+  "Urban Drainage Systems",
+  "Public Parks",
+  "Utility Relocation"
 ]
 },
 {
-image:"/projectmanagement.jpg",
-title: "Civil Engineering & Project Management",
-desc: "End-to-end planning, design, and execution of infrastructure projects with rigorous quality control and monitoring.",
-features: [
-"Project Planning",
-"Quantity Surveying",
-"Quality Assurance",
-"Contract Management"
+  icon: <Briefcase size={40} />,
+  image:"/projectmanagement.jpg",
+  title: "Civil Engineering & Project Management",
+  desc: "End-to-end planning, design, and execution of infrastructure projects with rigorous quality control and monitoring.",
+  features: [
+  "Project Planning",
+  "Quantity Surveying",
+  "Quality Assurance",
+  "Contract Management"
 ]
 }
 ];
@@ -117,6 +122,10 @@ return ( <div className="pt-24">
             </div>
 
             <div className="lg:w-2/3">
+             {/* ICON */}
+              <div className="w-16 h-16 mb-2 flex items-center justify-center rounded-full border border-gold text-gold bg-white">
+                {service.icon}
+              </div>
 
               <h3 className="text-3xl font-bold text-navy mb-4">
                 {service.title}
