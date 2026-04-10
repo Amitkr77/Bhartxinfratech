@@ -32,7 +32,7 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
           <p className="text-navy/70 text-lg leading-relaxed mb-6">
             Bharatx Infratech Private Limited is an infrastructure and civil
             engineering company focused on developing reliable public
-            infrastructure projects. Headquartered in Gaya, Bihar, we
+            infrastructure projects. Headquartered in Logix Cyberpark Noida, we
             specialize in government infrastructure works including road
             development, bridge construction, and civil engineering
             projects.

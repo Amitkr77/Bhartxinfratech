@@ -238,9 +238,9 @@ Registered Office
 </h4>
 
 <p className="text-navy/60">
-H. No. 136 Beladih, Cherki Bazar
+9th Floor, Logix Cyberpark, Tower-C, Sector 62, Noida,
 <br/>
-Gaya, Bihar – 824237, India
+Uttar Pradesh – 201309, India
 </p>
 
 </div>
@@ -297,7 +297,7 @@ tenders@bharatxinfratech.com
 <div className="h-80 bg-navy/5 rounded-sm overflow-hidden grayscale hover:grayscale-0 transition-all mb-6 duration-700">
 
 <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115664.8143212879!2d84.9213454!3d24.79545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a4406e07d61%3A0x5519640497ae51!2sGaya%2C%20Bihar!5e0!3m2!1sen!2sin!4v1710000000000"
+src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d14009.506802444957!2d77.361002!3d28.61847!3m2!1i1024!2i768!4f13.1!2m1!1siframe%20for%209th%20Floor%20Logix%20Cyberpark%20Tower%20C%20Sector%2062%20Noida%20Uttar%20Pradesh%20201309%20India!5e0!3m2!1sen!2sin!4v1775815799461!5m2!1sen!2sin"
 width="100%"
 height="100%"
 style={{border:0}}
@@ -312,7 +312,7 @@ loading="lazy"
 
 </div>
 
-<div className="flex items-center gap-30 justify-center">
+{/*<div className="flex items-center gap-30 justify-center">
   <img className="h-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChcfM79aVIunWa8ZiAlhEUa2RVOGFpNl-BUDTMqIA1s5m4JiQd7W2f0ppSDMmR9yP6s44oycSvcG9ktdPmeQHqE0BqcFJ1tO_Ad6rWrfGYlHcBJHVyZ8idr1ARqnOvhIiI6kUVZA1F9qPh1cL2qzhSz5uBH1Qmyco67RhmEG_3bALKdhumXd1m5uNjwenjzo4ZpxK1klQRZsZeL82DZYxap-kv6SKd0nZd1pSjbu8AtnRXhjv2vmmNrEvIv-yQ83KExY1RnQ" alt="ISO Certification Logo"/>
 
   <img className="h-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAchZMmfaY4HYm7m7UsdKr_rPVHzCLeT2-rBdDF6n20UZcwbsqdgXCzY9PafXtGp7ACROU0YTdDVYVKwaJjiRtXOqxTygSOuJAp36cCS1PFwy3XyViPjIg4sVUtTvl6XNtwHlaq4ad1XtYCQlO6Lbg8gxTtdsSyDTiDRpcm0sKNi1DE6CwXLu1DOBj4STzxP-m3aNIrWxExRrNqRW4V2okWiFR4_Kyj0W6WUu-VR2IwmIxblrMIuOIc-WxScP4q3AtjFlEQZw" alt="National Highway Authority Logo"/>
@@ -320,7 +320,7 @@ loading="lazy"
   <img className="h-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT7mXTgo6moAe1LJya6h_y6wS-boj4HoxXUfjm_NV1hZxC7ozm1tIB1IAfuJNUGDYtb1O1Qx3lCD3BkWbgZKaLeDEHupGv4KINyAXRlgCvSff7kOanECUqinL03ZMJKhVCIT2ojqVGetIoRHSgWxECyuTcFVXRcitR1BXkg4hvyaDBOYm2lPhgBweAwpiVFUxRGWvaGgHelBKeM9db8GJeQ5WUQwyHezbaArP4N8pcSF4e9kJ3Lba9AynOHkmnbBY53paZCA" alt="Indian Green Building Council Logo"/>
 
   <img className="h-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZLpOkc8n8UD2MVVfAEc56mXlJoDsE2mx5XTP7x8DGyBrWvd6_xobjcG8aI8PgbxgT-KI119M0Br7aANQzrD5YEt0i905w5l9kq3KjtqnojCaUVRiXe0ncd31m-g4GmVAzXUHcWCUWnKMCwYtp3FS9f9NQV2PEfZpKUn42L5EC29yECguMpZn2nzhSpRaFQSPBB0qWZ4wuEv8_M9kQeUTyejdbo7CW8yXMcye3CvTTPinupj4DDXFa2DAzfkGlZbKPaY5sag" alt="Ministry of Infrastructure Logo"/>
-</div>
+</div>*/}
 
 </section>
 

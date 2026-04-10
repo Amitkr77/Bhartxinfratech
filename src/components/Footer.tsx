@@ -197,9 +197,9 @@ Headquarters
 <div className="flex items-start">
 <MapPin className="mr-3 text-gold shrink-0" size={18} />
 <p>
-H. No. 136 Beladih, Cherki Bazar
+9th Floor, Logix Cyberpark, Tower-C, Sector 62, Noida,  
 <br />
-Gaya, Bihar – 824237, India
+Uttar Pradesh – 201309, India
 </p>
 </div>
 
@@ -230,7 +230,7 @@ Gaya, Bihar – 824237, India
   Sitemap
 </Link>
 <p className="mt-4 md:mt-0">
-CIN: U41001BR2026PTC082273 | PAN: AAOCB4119N
+CIN: U41001BR2026PTC082273 |
 </p>
 
 </div>

@@ -47,7 +47,7 @@ Registered Contractor Status
 
 <div className="grid md:grid-cols-2 gap-8">
 
-{/* RCD */}
+{/* NHAI */}
 
 <div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
 
@@ -59,11 +59,11 @@ Registered Contractor Status
 
 <div>
 <h3 className="text-lg font-bold text-navy">
-RCD, Bihar
+NHAI, India
 </h3>
 
 <p className="text-xs text-navy/60 uppercase tracking-widest">
-Road Construction Department
+National Highways Authority of India
 </p>
 
 <span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
@@ -76,6 +76,186 @@ Class I
 
 </div>
 
+
+{/* NTPC */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+NTPC, India
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+National Thermal Power Corporation
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+{/* IOCL */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+IOCL, India
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Indian Oil Corporation
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+{/* RCD */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+RCD, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Road Construction Department
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+{/* WRD */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+WRD, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Water Resource Department
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+{/* BCD */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+BCD, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Building Construction Department
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+{/* PHED */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+PHED, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Public Health Engineering Department
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
 
 {/* PWD */}
 
@@ -106,6 +286,98 @@ Registered
 </div>
 
 </div>
+
+{/* RWD */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+RWD, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Rural Works Department
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+{/* MCD */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+MCD, Delhi
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Municipal Corporation of Delhi
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+{/* PMC */}
+
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+PMC, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Patna Municipal Corporation
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
 
 </div>
 
