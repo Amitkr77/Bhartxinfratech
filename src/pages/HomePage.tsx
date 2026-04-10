@@ -377,7 +377,7 @@ referrerPolicy="no-referrer"
         <div className="flex w-max animate-scroll">
 
           {/* First Set */}
-          <div className="flex items-center gap-18">
+          <div className="flex items-center gap-20">
             {[
               "/homeasy.png",
               "/biddrx.png",
@@ -392,13 +392,13 @@ referrerPolicy="no-referrer"
                 key={i}
                 src={logo}
                 alt="partner"
-                className="h-25 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
+                className="h-24 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
               />
             ))}
           </div>
 
           {/* Duplicate Set (for seamless loop) */}
-          <div className="flex items-center gap-18">
+          <div className="flex items-center gap-20 ml-20">
             {[
               "/homeasy.png",
               "/biddrx.png",
@@ -413,7 +413,7 @@ referrerPolicy="no-referrer"
                 key={"dup-" + i}
                 src={logo}
                 alt="partner"
-                className="h-25 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
+                className="h-24 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
               />
             ))}
           </div>
