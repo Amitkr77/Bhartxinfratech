@@ -84,13 +84,13 @@ className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center h
 <FaLinkedinIn size={16} />
 </a>  
 
-<div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors cursor-pointer">
+{/*<div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors cursor-pointer">
 <Globe size={18} />
 </div>
 
 <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors cursor-pointer">
 <Users size={18} />
-</div>
+</div>*/}
 
 </div>
 
@@ -104,7 +104,7 @@ className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center h
 Quick Links
 </h3>
 
-<ul className="space-y-4 text-sm text-white/80">
+<ul className="space-y-2 text-sm text-white/80">
 
 <li>
 <button
