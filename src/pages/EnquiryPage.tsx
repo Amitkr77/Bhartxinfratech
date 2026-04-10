@@ -156,9 +156,9 @@ export default function EnquiryPage() {
               <div className="flex items-start">
                 <MapPin className="text-gold mr-4 mt-1" />
                 <span className="text-navy font-medium">
-                  H. No. 136 Beladih, Cherki Bazar  
+                  9th Floor, Logix Cyberpark, Tower-C, Sector 62, Noida, 
                   <br />
-                  Gaya, Bihar – 824237
+                  Uttar Pradesh – 201309, India
                 </span>
               </div>
 
@@ -166,7 +166,7 @@ export default function EnquiryPage() {
 
             <div className="mt-10">
               <img
-                src="https://picsum.photos/seed/construction-site/600/400"
+                src="/civilinfra.png"
                 alt="Infrastructure Project"
                 className="w-full h-[550px] object-cover rounded-lg shadow-lg"
               />
