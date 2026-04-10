@@ -71,7 +71,7 @@ Connect with the Architects of Progress
 </h1>
 
 <p className="text-gold font-semibold tracking-[0.3em] uppercase text-sm">
-Regional Headquarters • Gaya, Bihar
+Regional Headquarters • Noida, Uttar Pradesh
 </p>
 
 </div>
