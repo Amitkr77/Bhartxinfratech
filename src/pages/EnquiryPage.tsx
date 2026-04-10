@@ -1,9 +1,25 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 
+type FormDataType = {
+  name: string;
+  company: string;
+  email: string;
+  phone: string;
+  enquiry: string;
+  message: string;
+};
+
+type ErrorsType = {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+};
+
 export default function EnquiryPage() {
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormDataType>({
     name: "",
     company: "",
     email: "",
@@ -12,9 +28,11 @@ export default function EnquiryPage() {
     message: ""
   });
 
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<ErrorsType>({});
 
-  const handleChange = (e) => {
+  const handleChange = (
+  e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -22,7 +40,7 @@ export default function EnquiryPage() {
   };
 
   const validate = () => {
-    let newErrors:any = {};
+    let newErrors: ErrorsType = {};
 
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
@@ -48,7 +66,7 @@ export default function EnquiryPage() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (validate()) {
@@ -264,12 +282,12 @@ export default function EnquiryPage() {
                   onChange={handleChange}
                   className="w-full border border-navy/20 p-3 focus:outline-none focus:border-gold"
                 >
-                  <option>Project Partnership</option>
-                  <option>Government Tender</option>
-                  <option>Vendor Registration</option>
-                  <option>Infrastructure Consultancy</option>
-                  <option>Career / HR</option>
-                  <option>General Enquiry</option>
+                  <option value="Project Partnership">Project Partnership</option>
+                  <option value="Government Tender">Government Tender</option>
+                  <option value="Vendor Registration">Vendor Registration</option>
+                  <option value="Infrastructure Consultancy">Infrastructure Consultancy</option>
+                  <option value="Career / HR">Career / HR</option>
+                  <option value="General Enquiry">General Enquiry</option>
                 </select>
 
               </div>
