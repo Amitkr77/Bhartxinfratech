@@ -359,6 +359,76 @@ referrerPolicy="no-referrer"
 </div>
 </section>
 
+<section className="py-12 bg-gray-50">
+  <div className="w-full mx-auto px-6 text-center">
+
+    {/* Title */}
+    <p className="text-gold font-bold tracking-[0.3em] text-xs uppercase mb-4">
+      Our Clients
+    </p>
+
+    <h2 className="text-3xl md:text-4xl font-bold text-navy mb-10">
+      Trusted by Industry Leaders
+    </h2>
+
+    {/* Marquee */}
+    <div className="relative overflow-hidden">
+
+      {/* Fade edges */}
+      <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
+      <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
+
+      <div className="flex w-max animate-scroll">
+
+        {/* First Set */}
+        <div className="flex items-center gap-16">
+          {[
+            "/biddrx.png",
+            "/Casters.png",
+            "/cehro.png",
+            "/sumedha.webp",
+            "/homeasy.png",
+            "/ventures.png",
+            "/kynyx.png",
+            "/ecotwist.png",
+            "/infratech.png"
+          ].map((logo, i) => (
+            <img
+              key={i}
+              src={logo}
+              alt="client"
+              className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0"
+            />
+          ))}
+        </div>
+
+        {/* Duplicate (for loop) */}
+        <div className="flex items-center gap-16">
+          {[
+            "/biddrx.png",
+            "/Casters.png",
+            "/cehro.png",
+            "/sumedha.webp",
+            "/homeasy.png",
+            "/ventures.png",
+            "/kynyx.png",
+            "/ecotwist.png",
+            "/infratech.png"
+          ].map((logo, i) => (
+            <img
+              key={"dup-" + i}
+              src={logo}
+              alt="client"
+              className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0"
+            />
+          ))}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 {/* Vision Section */}
 
 <section className="py-24 bg-white">
