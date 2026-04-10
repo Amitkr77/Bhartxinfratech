@@ -387,7 +387,6 @@ referrerPolicy="no-referrer"
               "/sumedha.webp",            
               "/ventures.png",
               "/ecotwist.png",
-              "/logo2.png"
             ].map((logo, i) => (
               <img
                 key={i}
@@ -409,7 +408,6 @@ referrerPolicy="no-referrer"
               "/sumedha.webp",            
               "/ventures.png",
               "/ecotwist.png",
-              "/logo2.png"
             ].map((logo, i) => (
               <img
                 key={"dup-" + i}
