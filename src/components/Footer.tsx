@@ -197,7 +197,9 @@ Headquarters
 <div className="flex items-start">
 <MapPin className="mr-3 text-gold shrink-0" size={18} />
 <p>
-9th Floor, Logix Cyberpark, Tower-C, Sector 62, Noida,  
+9th Floor, Logix Cyberpark, 
+<br />
+Tower-C, Sector 62, Noida,  
 <br />
 Uttar Pradesh – 201309, India
 </p>

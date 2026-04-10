@@ -377,7 +377,35 @@ Registered
 
 </div>
 
+{/* PMRCL */}
 
+<div className="p-8 border border-navy/10 rounded-xl shadow-sm hover:shadow-lg transition">
+
+<div className="flex items-center">
+
+<div className="w-14 h-14 bg-navy rounded-lg flex items-center justify-center mr-6">
+<Factory className="text-gold"/>
+</div>
+
+<div>
+
+<h3 className="text-lg font-bold text-navy">
+PMRCL, Bihar
+</h3>
+
+<p className="text-xs text-navy/60 uppercase tracking-widest">
+Patna Metro Rail Corporation Limited
+</p>
+
+<span className="mt-2 inline-block text-xs bg-gold/20 text-gold px-2 py-1 rounded">
+Registered
+</span>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
