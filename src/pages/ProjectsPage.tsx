@@ -126,10 +126,10 @@ return ( <div className="pt-24">
               </div>
 
 
-              <button className="text-navy font-bold flex items-center group-hover:text-gold transition-colors">
+          {/*    <button className="text-navy font-bold flex items-center group-hover:text-gold transition-colors">
                 VIEW PROJECT DETAILS
                 <ChevronRight className="ml-1" size={18} />
-              </button>
+              </button>*/}
 
             </div>
 
