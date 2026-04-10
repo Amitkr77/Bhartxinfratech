@@ -5,7 +5,7 @@ export default function ServicesPage() {
 
 const services = [
 {
-icon: <Route size={40} />,
+image: "/road.jpg",
 title: "Road Construction & Maintenance",
 desc: "Construction and rehabilitation of highways, expressways, and major district roads using advanced paving technology.",
 features: [
@@ -16,7 +16,7 @@ features: [
 ]
 },
 {
-icon: <Construction size={40} />,
+image:"/flyover.jpg",
 title: "Bridge & Flyover Construction",
 desc: "Structural engineering and construction of RCC and steel bridges, flyovers, and overpasses for urban and rural connectivity.",
 features: [
@@ -27,7 +27,7 @@ features: [
 ]
 },
 {
-icon: <Landmark size={40} />,
+image:"/building.jpg",
 title: "Building Construction",
 desc: "Development of government offices, institutional buildings, and public infrastructure facilities with modern amenities.",
 features: [
@@ -38,7 +38,7 @@ features: [
 ]
 },
 {
-icon: <Construction size={40} />,
+image:"/seawageinfra.png",
 title: "Infrastructure Development",
 desc: "Execution of large-scale public infrastructure projects including smart city works and urban development initiatives.",
 features: [
@@ -49,7 +49,7 @@ features: [
 ]
 },
 {
-icon: <Briefcase size={40} />,
+image:"/projectmanagement.jpg",
 title: "Civil Engineering & Project Management",
 desc: "End-to-end planning, design, and execution of infrastructure projects with rigorous quality control and monitoring.",
 features: [
@@ -108,14 +108,13 @@ return ( <div className="pt-24">
             }`}
           >
 
-            <div className="lg:w-1/3 flex justify-center">
-
-              <div className="w-32 h-32 rounded-full border-2 border-gold flex items-center justify-center text-gold">
-                {service.icon}
-              </div>
-
+            <div className="lg:w-1/3 w-full h-64 lg:h-auto rounded-2xl overflow-hidden">
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-cover"
+              />
             </div>
-
 
             <div className="lg:w-2/3">
 
