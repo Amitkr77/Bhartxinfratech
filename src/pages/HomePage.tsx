@@ -125,7 +125,7 @@ Years Excellence
 {/* Institutional Partnerships Section */}
 
 <section className="py-10 bg-white">
-  <div className="max-w-7xl mx-auto px-6 text-center">
+  <div className="w-full mx-auto px-6 text-center">
 
     {/* Section Header */}
     <div className="text-center mb-10">
@@ -263,7 +263,7 @@ className="p-8 border border-navy/5 bg-navy/[0.02] hover:shadow-2xl transition-a
 
 {/* Services Preview */}
 
-<section className="py-24 bg-navy text-white relative overflow-hidden">
+<section className="py-24 items-start pt-8 bg-navy text-white relative overflow-hidden">
 
 {/*<div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
 <img
@@ -277,7 +277,7 @@ referrerPolicy="no-referrer"
 
 <div className="max-w-7xl mx-auto px-6 relative z-10">
 
-<div className="flex flex-col md:flex-row justify-between items-end mb-16">
+<div className="flex flex-col md:flex-row justify-between items-end mb-12">
 
 <div>
 <p className="text-gold font-semibold tracking-[0.3em] text-xs uppercase mb-4">

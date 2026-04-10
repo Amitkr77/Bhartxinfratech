@@ -84,15 +84,19 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
 
         <div className="p-10 border border-navy/10 bg-navy/[0.01]">
 
-          <div className="w-12 h-12 gold-gradient flex items-center justify-center mb-6">
-            <Globe className="text-navy" />
+          <div className="flex items-center justify-center gap-4 mb-6">
+            {/* Icon Box */}
+            <div className="w-12 h-12 gold-gradient flex items-center justify-center rounded-lg">
+              <Globe className="text-navy" />
+            </div>
+
+            {/* Title */}
+            <h3 className="text-xl font-bold">
+              Our Mission
+            </h3>
           </div>
-
-          <h3 className="text-xl font-bold mb-4">
-            Our Mission
-          </h3>
-
-          <p className="text-navy/60 text-sm leading-relaxed">
+         
+          <p className="text-navy/60 text-sm leading-relaxed text-center">
             Deliver durable and high-quality infrastructure projects that
             support economic growth and public connectivity across the
             nation.
@@ -100,42 +104,53 @@ return ( <div className="pt-24"> <section className="relative py-32 bg-navy"> <d
 
         </div>
 
-        <div className="p-10 border border-navy/10 bg-navy/[0.01]">
+        <div className="p-10 border border-navy/10 bg-navy/[0.01] rounded-xl hover:shadow-lg transition-all duration-300">
 
-          <div className="w-12 h-12 gold-gradient flex items-center justify-center mb-6">
-            <TrendingUp className="text-navy" />
+          {/* Header */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            
+            {/* Icon */}
+            <div className="w-12 h-12 gold-gradient flex items-center justify-center rounded-lg">
+              <TrendingUp className="text-navy" />
+            </div>
+
+            {/* Title */}
+            <h3 className="text-xl font-bold text-navy">
+              Our Vision
+            </h3>
           </div>
 
-          <h3 className="text-xl font-bold mb-4">
-            Our Vision
-          </h3>
-
-          <p className="text-navy/60 text-sm leading-relaxed">
-            Become a trusted infrastructure contractor for major
-            infrastructure development projects across India, setting
-            benchmarks in engineering.
+          {/* Description */}
+          <p className="text-navy/70 text-sm leading-relaxed text-center">
+            Become a trusted infrastructure contractor for major infrastructure
+            development projects across India, setting benchmarks in engineering.
           </p>
 
         </div>
 
-        <div className="p-10 border border-navy/10 bg-navy/[0.01]">
+        <div className="p-10 border border-navy/10 bg-navy/[0.01] rounded-xl hover:shadow-lg transition-all duration-300">
 
-          <div className="w-12 h-12 gold-gradient flex items-center justify-center mb-6">
-            <Award className="text-navy" />
+          {/* Header (centered) */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="w-12 h-12 gold-gradient flex items-center justify-center rounded-lg">
+              <Award className="text-navy" />
+            </div>
+
+            <h3 className="text-xl font-bold text-navy">
+              Core Values
+            </h3>
           </div>
 
-          <h3 className="text-xl font-bold mb-4">
-            Core Values
-          </h3>
-
-          <ul className="text-navy/60 text-sm space-y-2">
-            <li>• Engineering Excellence</li>
-            <li>• Uncompromising Integrity</li>
-            <li>• Safety-First Culture</li>
-            <li>• Quality & Sustainability</li>
+          {/* List (left aligned but centered container) */}
+          <ul className="text-navy/70 pl-16 text-sm space-y-2 leading-relaxed max-w-xs mx-auto list-disc list-inside text-left">
+            <li>Engineering Excellence</li>
+            <li>Uncompromising Integrity</li>
+            <li>Safety-First Culture</li>
+            <li>Quality & Sustainability</li>
           </ul>
-        </div>       
+        </div>
       </div>
+
       {/* Leadership Section */}
         <div className="py-24 max-w-7xl mx-auto px-6">
 

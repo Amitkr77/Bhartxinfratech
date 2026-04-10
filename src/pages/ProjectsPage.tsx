@@ -4,38 +4,38 @@ import { MapPin, ChevronRight } from "lucide-react";
 export default function ProjectsPage() {
 
 const projects = [
-{
-title: "National Highway Expansion - Bihar",
-location: "Patna - Gaya Section",
-type: "Road Infrastructure",
-status: "Ongoing",
-value: "₹245 Cr",
-img: "https://picsum.photos/seed/nh/800/600"
-},
-{
-title: "District Infrastructure Improvement",
-location: "Gaya District",
-type: "Urban Development",
-status: "Completed",
-value: "₹85 Cr",
-img: "https://picsum.photos/seed/urban/800/600"
-},
-{
-title: "Government Administrative Complex",
-location: "Bihar Sharif",
-type: "Building Construction",
-status: "In Progress",
-value: "₹120 Cr",
-img: "https://picsum.photos/seed/complex/800/600"
-},
-{
-title: "Four-Lane Flyover Network",
-location: "Muzaffarpur",
-type: "Bridge Engineering",
-status: "Ongoing",
-value: "₹175 Cr",
-img: "https://picsum.photos/seed/flyover/800/600"
-}
+  {
+    title: "National Highway Expansion - Bihar",
+    location: "Patna - Gaya Section",
+    type: "Road Infrastructure",
+    status: "Ongoing",
+    value: "₹245 Cr",
+    img: "https://picsum.photos/seed/nh/800/600"
+  },
+  {
+    title: "District Infrastructure Improvement",
+    location: "Gaya District",
+    type: "Urban Development",
+    status: "Completed",
+    value: "₹85 Cr",
+    img: "https://picsum.photos/seed/urban/800/600"
+  },
+  {
+    title: "Government Administrative Complex",
+    location: "Bihar Sharif",
+    type: "Building Construction",
+    status: "In Progress",
+    value: "₹120 Cr",
+    img: "https://picsum.photos/seed/complex/800/600"
+  },
+  {
+    title: "Four-Lane Flyover Network",
+    location: "Muzaffarpur",
+    type: "Bridge Engineering",
+    status: "Ongoing",
+    value: "₹175 Cr",
+    img: "https://picsum.photos/seed/flyover/800/600"
+  }
 ];
 
 return ( <div className="pt-24">
