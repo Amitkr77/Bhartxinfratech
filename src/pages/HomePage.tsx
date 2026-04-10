@@ -370,55 +370,37 @@ referrerPolicy="no-referrer"
     {/* Marquee */}
     <div className="relative overflow-hidden">
 
-        {/* Fade edges (premium look) */}
-        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10" />
+      {/* Fade edges */}
+      <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
-        <div className="flex w-max animate-scroll">
+      <div className="flex w-max animate-scroll items-center">
 
-          {/* First Set */}
-          <div className="flex items-center gap-20">
+        {/* Logos (Single repeated array) */}
+        {[...Array(2)].map((_, setIndex) => (
+          <div key={setIndex} className="flex items-center gap-20 px-10">
             {[
               "/homeasy.png",
               "/biddrx.png",
               "/Casters.png",
               "/kynyx.png",
               "/cehro.png",
-              "/sumedha.webp",            
+              "/sumedha.webp",
               "/ventures.png",
               "/ecotwist.png",
             ].map((logo, i) => (
               <img
-                key={i}
+                key={`${setIndex}-${i}`}
                 src={logo}
                 alt="partner"
-                className="h-24 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
+                className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition duration-300 flex-shrink-0"
               />
             ))}
           </div>
+        ))}
 
-          {/* Duplicate Set (for seamless loop) */}
-          <div className="flex items-center gap-20 ml-20">
-            {[
-              "/homeasy.png",
-              "/biddrx.png",
-              "/Casters.png",
-              "/kynyx.png",
-              "/cehro.png",
-              "/sumedha.webp",            
-              "/ventures.png",
-              "/ecotwist.png",
-            ].map((logo, i) => (
-              <img
-                key={"dup-" + i}
-                src={logo}
-                alt="partner"
-                className="h-24 object-contain opacity-80 hover:opacity-100 transition-all duration-100 flex-shrink-0"
-              />
-            ))}
-          </div>
-        </div>
       </div>
+    </div>
   </div>
 </section>
 
