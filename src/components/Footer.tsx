@@ -19,7 +19,7 @@ return (
 {/* Company Info */}
 <div>
 
-<div className="flex items-center justify-center -mt-8 mb-2">
+<div className="flex items-left pl-16 -mt-8 mb-2">
 
 <div className="w-[100px] h-[100px] white-gradient rounded-sm flex items-center justify-center">
             <img
