@@ -228,9 +228,9 @@ Uttar Pradesh – 201309, India
 <p>
 © 2026 BHARATX INFRATECH PRIVATE LIMITED. ALL RIGHTS RESERVED.
 </p>
-<Link to="/sitemap" className="hover:text-gold transition-colors">
+{/* <Link to="/sitemap" className="hover:text-gold transition-colors">
   Sitemap
-</Link>
+</Link> */}
 <p className="mt-4 md:mt-0">
 CIN: U41001BR2026PTC082273 |
 </p>
