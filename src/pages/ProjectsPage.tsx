@@ -10,15 +10,15 @@ const projects = [
     type: "Road Infrastructure",
     status: "Ongoing",
     value: "₹245 Cr",
-    img: "/road.jpg"
+    img: "/roadways.jpg"
   },
   {
     title: "District Infrastructure Improvement",
     location: "Gaya District",
     type: "Urban Development",
-    status: "In Progress",
+    status: "Completed",
     value: "₹85 Cr",
-    img: "/seawageinfra.png"
+    img: "/districtinfra.jpg"
   },
   {
     title: "Government Administrative Complex",
@@ -26,7 +26,7 @@ const projects = [
     type: "Building Construction",
     status: "In Progress",
     value: "₹120 Cr",
-    img: "/powerstation.png"
+    img: "/governcomplex.png"
   },
   {
     title: "Four-Lane Flyover Network",
@@ -34,7 +34,7 @@ const projects = [
     type: "Bridge Engineering",
     status: "Ongoing",
     value: "₹175 Cr",
-    img: "/flyover.jpg"
+    img: "/fourlane.jpg"
   }
 ];
 
@@ -113,9 +113,9 @@ return ( <div className="pt-24">
 
                 </div>
 
-                <p className="text-navy font-bold text-xl">
+            {/*    <p className="text-navy font-bold text-xl">
                   {project.value}
-                </p>
+                </p> */}
 
               </div>
 
