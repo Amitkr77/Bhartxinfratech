@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed left-1/2 -translate-x-1/2 w-full z-50 py-2 transition-all duration-300
+      className={`fixed left-1/2 h-18 -translate-x-1/2 w-full z-50 py-2 transition-all duration-300
       ${
         isScrolled
           ? "bg-white/80 shadow-xl backdrop-blur-md"
@@ -69,16 +69,16 @@ const Navbar = () => {
           className="flex items-center cursor-pointer"
           onClick={() => handleNavigation("/")}
         >
-          <div className="w-20 h-20 white-gradient rounded-sm flex items-center justify-center mr-3">
+          <div className="w-24 h-auto white-gradient rounded-sm flex items-center justify-center">
             <motion.img
-              src={isScrolled ? "/logo2.png" : "/logo2.png"}
+              src="/logo2.png"
               alt="Bharatx Logo"
-              animate={{
-                height: isScrolled ? 72 : 100,   // 👈 size change
-                width: isScrolled ? 72 : 100,
-              }}
+              className="w-auto h-auto rounded-sm object-contain"
+              // animate={{
+              //   height: isScrolled ? 100 : 100,   // 👈 size change
+              //   width: isScrolled ? 100 : 100,
+              // }}
               transition={{ duration: 0.3 }}
-              className="object-contain"
             />
           </div>
 
