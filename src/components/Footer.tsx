@@ -19,20 +19,20 @@ return (
 {/* Company Info */}
 <div>
 
-<div className="flex items-center mb-6">
+<div className="flex items-center justify-center mb-2">
 
-<div className="w-18 h-18 white-gradient rounded-sm flex items-center justify-center mr-3">
+<div className="w-[100px] h-[100px] white-gradient rounded-sm flex items-center justify-center">
             <img
               loading="lazy"
-              src="/logo2.png"
+              src="/footerlogo.png"
               alt="Bharatx Logo"
-              className="w-18 h-18 rounded-sm object-contain"
+              className="w-full h-full rounded-sm object-contain"
             />
           </div>
 
-<h2 className="font-display font-bold text-xl tracking-wider">
+{/*<h2 className="font-display font-bold text-xl tracking-wider">
 BHARATX
-</h2>
+</h2>*/}
 
 </div>
 
