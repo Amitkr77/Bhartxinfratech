@@ -10,15 +10,15 @@ const projects = [
     type: "Road Infrastructure",
     status: "Ongoing",
     value: "₹245 Cr",
-    img: "https://picsum.photos/seed/nh/800/600"
+    img: "/road.jpg"
   },
   {
     title: "District Infrastructure Improvement",
     location: "Gaya District",
     type: "Urban Development",
-    status: "Completed",
+    status: "In Progress",
     value: "₹85 Cr",
-    img: "https://picsum.photos/seed/urban/800/600"
+    img: "/seawageinfra.png"
   },
   {
     title: "Government Administrative Complex",
@@ -26,7 +26,7 @@ const projects = [
     type: "Building Construction",
     status: "In Progress",
     value: "₹120 Cr",
-    img: "https://picsum.photos/seed/complex/800/600"
+    img: "/powerstation.png"
   },
   {
     title: "Four-Lane Flyover Network",
@@ -34,7 +34,7 @@ const projects = [
     type: "Bridge Engineering",
     status: "Ongoing",
     value: "₹175 Cr",
-    img: "https://picsum.photos/seed/flyover/800/600"
+    img: "/flyover.jpg"
   }
 ];
 
