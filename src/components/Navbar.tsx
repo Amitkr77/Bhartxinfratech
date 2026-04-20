@@ -160,7 +160,7 @@ const Navbar = () => {
                     setIsMobileMenuOpen(false);
                   }}
                   className={`text-left text-lg font-medium ${
-                    activePage === item.id ? "text-gold" : "text-navy-500"
+                    activePage === item.id ? "text-gold" : "text-white"
                   }`}
                 >
                   {item.label}
