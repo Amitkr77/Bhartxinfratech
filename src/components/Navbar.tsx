@@ -102,7 +102,7 @@ const Navbar = () => {
               key={item.id}
               onClick={() => handleNavigation(item.path)}
               className={`text-lg font-medium tracking-wide transition-colors hover:text-gold ${
-                activePage === item.id? "text-gold" : isScrolled ? "text-navy": "text-blue text-bold"
+                activePage === item.id? "text-gold" : isScrolled ? "text-navy": "text-white text-bold"
               }`}
             >
               {item.label}
@@ -118,7 +118,7 @@ const Navbar = () => {
                 ? "bg-gold text-blue text-bold border-gold"
                 : isScrolled
                 ? "border-navy-500 text-navy-500 hover:bg-gold hover:text-navy"
-                : "border-navy text-navy hover:bg-gold hover:text-navy"
+                : "border-white text-white hover:bg-gold hover:text-navy"
             }`}
           >
             ENQUIRE
