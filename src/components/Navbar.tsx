@@ -112,7 +112,7 @@ const Navbar = () => {
 
           <button
             onClick={() => handleNavigation("/enquiry")}
-            className={`px-6 py-2 border text-lg font-semibold transition-all duration-300
+            className={`px-6 py-2 border rounded-lg text-lg font-semibold transition-all duration-300
             ${
               location.pathname === "/enquiry"
                 ? "bg-gold text-blue text-bold border-gold"
