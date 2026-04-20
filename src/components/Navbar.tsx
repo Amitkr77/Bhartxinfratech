@@ -23,15 +23,15 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const isHome = location.pathname === "/";
+
   /* Detect scroll */
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   
-
   const navItems: { id: Page; label: string; path: string }[] = [
     { id: "home", label: "Home", path: "/" },
     { id: "about", label: "About", path: "/about" },
@@ -71,9 +71,14 @@ const Navbar = () => {
         >
           <div className="w-24 h-auto white-gradient rounded-sm flex items-center justify-center">
             <motion.img
-              src="/logo2.png"
+              src={
+                    isHome
+                      ? (isScrolled ? "/logo2.png" : "/footerlogo.png") // 👈 only home has split logo
+                      : "/logo2.png" // 👈 other pages always normal logo
+                  }
               alt="Bharatx Logo"
               className="w-auto h-auto rounded-sm object-contain"
+              key={isHome && isScrolled ? "split" : "normal"}
               // animate={{
               //   height: isScrolled ? 100 : 100,   // 👈 size change
               //   width: isScrolled ? 100 : 100,
@@ -102,8 +107,12 @@ const Navbar = () => {
               key={item.id}
               onClick={() => handleNavigation(item.path)}
               className={`text-lg font-medium tracking-wide transition-colors hover:text-gold ${
-                activePage === item.id? "text-gold" : isScrolled ? "text-navy": "text-white text-bold"
-              }`}
+                activePage === item.id
+                    ? "text-gold"
+                    : isHome
+                      ? (isScrolled ? "text-navy" : "text-white")
+                      : "text-navy"
+                }`}
             >
               {item.label}
             </button>
@@ -113,13 +122,15 @@ const Navbar = () => {
           <button
             onClick={() => handleNavigation("/enquiry")}
             className={`px-6 py-2 border rounded-lg text-lg font-semibold transition-all duration-300
-            ${
-              location.pathname === "/enquiry"
-                ? "bg-gold text-blue text-bold border-gold"
-                : isScrolled
-                ? "border-navy-500 text-navy-500 hover:bg-gold hover:text-navy"
-                : "border-white text-white hover:bg-gold hover:text-navy"
-            }`}
+              ${
+                location.pathname === "/enquiry"
+                  ? "bg-gold text-blue font-bold border-gold"
+                  : isHome
+                    ? (isScrolled
+                        ? "border-navy-500 text-navy-500 hover:bg-gold hover:text-navy"
+                        : "border-white text-white hover:border-navy hover:bg-gold hover:text-navy")
+                    : "border-navy-500 text-navy-500 hover:bg-gold hover:text-navy"
+              }`}
           >
             ENQUIRE
           </button>
