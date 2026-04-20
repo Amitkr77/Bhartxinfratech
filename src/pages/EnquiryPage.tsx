@@ -142,7 +142,7 @@ export default function EnquiryPage() {
               <div className="flex items-center">
                 <Phone className="text-gold mr-4" />
                 <span className="text-navy font-medium">
-                  +91 (631) 222-XXXX
+                  +91 98112 63046
                 </span>
               </div>
 
