@@ -128,7 +128,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`lg:hidden ${isScrolled ? "text-white" : "text-navy"}`}
+          className={`lg:hidden ${isScrolled ? "text-gray-400" : "text-navy"}`}
           aria-label="Toggle mobile menu"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
